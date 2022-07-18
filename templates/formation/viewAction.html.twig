@@ -1,0 +1,264 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Action :
+	{{Name}}
+{% endblock %}
+
+{% block body %}
+	{{ form_start(Form, {'attr': {'id': 'form' }}) }}
+
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.numero) }}
+			<span id="numeroCounter"></span>
+		</div>
+		{{ form_widget(Form.numero,{'value':Action.numero}) }}
+		{{ form_errors(Form.numero) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.niveauEntreeObligatoire) }}
+			<span id="niveauEntreeObligatoireCounter"></span>
+		</div>
+		{{ form_widget(Form.niveauEntreeObligatoire,{'value':Action.niveauEntreeObligatoire}) }}
+		{{ form_errors(Form.niveauEntreeObligatoire) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.modalitesEnseignement) }}
+			<span id="modalitesEnseignementCounter"></span>
+		</div>
+		{{ form_widget(Form.modalitesEnseignement,{'value':Action.modalitesEnseignement}) }}
+		{{ form_errors(Form.modalitesEnseignement) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.conditionsSpecifiques) }}
+			<span id="conditionsSpecifiquesCounter"></span>
+		</div>
+		{{ form_widget(Form.conditionsSpecifiques,{'value':Action.conditionsSpecifiques}) }}
+		{{ form_errors(Form.conditionsSpecifiques) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.modalitesEntreesSorties) }}
+			<span id="modalitesEntreesSortiesCounter"></span>
+		</div>
+		{{ form_widget(Form.modalitesEntreesSorties,{'value':Action.modalitesEntreesSorties}) }}
+		{{ form_errors(Form.modalitesEntreesSorties) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.urlWeb) }}
+			<span id="urlWebCounter"></span>
+		</div>
+		{{ form_widget(Form.urlWeb,{'value':Action.urlWeb}) }}
+		{{ form_errors(Form.urlWeb) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.restauration) }}
+			<span id="restaurationCounter"></span>
+		</div>
+		{{ form_widget(Form.restauration,{'value':Action.restauration}) }}
+		{{ form_errors(Form.restauration) }}
+	</div>
+
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.hebergement) }}
+			<span id="hebergementCounter"></span>
+		</div>
+		{{ form_widget(Form.hebergement,{'value':Action.hebergement}) }}
+		{{ form_errors(Form.hebergement) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.transport) }}
+			<span id="transportCounter"></span>
+		</div>
+		{{ form_widget(Form.transport,{'value':Action.transport}) }}
+		{{ form_errors(Form.transport) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.langueFormation) }}
+			<span id="langueFormationCounter"></span>
+		</div>
+		{{ form_widget(Form.langueFormation,{'value':Action.langueFormation}) }}
+		{{ form_errors(Form.langueFormation) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.modalitesRecrutement) }}
+			<span id="modalitesRecrutementCounter"></span>
+		</div>
+		{{ form_widget(Form.modalitesRecrutement,{'value':Action.modalitesRecrutement}) }}
+		{{ form_errors(Form.modalitesRecrutement) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.modalitesPedagogiques) }}
+			<span id="modalitesPedagogiquesCounter"></span>
+		</div>
+		{{ form_widget(Form.modalitesPedagogiques,{'value':Action.modalitesPedagogiques}) }}
+		{{ form_errors(Form.modalitesPedagogiques) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.codePerimetreRecrutement) }}
+			<span id="codePerimetreRecrutementCounter"></span>
+		</div>
+		{{ form_widget(Form.codePerimetreRecrutement,{'value':Action.codePerimetreRecrutement}) }}
+		{{ form_errors(Form.codePerimetreRecrutement) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.infosPerimetreRecrutement) }}
+			<span id="infosPerimetreRecrutementCounter"></span>
+		</div>
+		{{ form_widget(Form.infosPerimetreRecrutement,{'value':Action.infosPerimetreRecrutement}) }}
+		{{ form_errors(Form.infosPerimetreRecrutement) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.nombreHeuresCentre) }}
+			<span id="nombreHeuresCentreCounter"></span>
+		</div>
+		{{ form_widget(Form.nombreHeuresCentre,{'value':Action.nombreHeuresCentre}) }}
+		{{ form_errors(Form.nombreHeuresCentre) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.nombreHeuresEntreprise) }}
+			<span id="nombreHeuresEntrepriseCounter"></span>
+		</div>
+		{{ form_widget(Form.nombreHeuresEntreprise,{'value':Action.nombreHeuresEntreprise}) }}
+		{{ form_errors(Form.nombreHeuresEntreprise) }}
+	</div>
+
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.modalitesHandicap) }}
+			<span id="modalitesHandicapCounter"></span>
+		</div>
+		{{ form_widget(Form.modalitesHandicap,{'value':Action.Extras.modalitesHandicap}) }}
+		{{ form_errors(Form.modalitesHandicap) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.infoAdmission) }}
+			<span id="infoAdmissionCounter"></span>
+		</div>
+		{{ form_widget(Form.infoAdmission,{'value':Action.Extras.infoAdmission}) }}
+		{{ form_errors(Form.infoAdmission) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.codeModalitesAdmission) }}
+			<span id="codeModalitesAdmissionCounter"></span>
+		</div>
+		{{ form_widget(Form.codeModalitesAdmission,{'value':Action.Extras.codeModalitesAdmission}) }}
+		{{ form_errors(Form.codeModalitesAdmission) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.codeGfe) }}
+			<span id="codeGfeCounter"></span>
+		</div>
+		{{ form_widget(Form.codeGfe,{'value':Action.Extras.codeGfe}) }}
+		{{ form_errors(Form.codeGfe) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.codeTypeHoraire) }}
+			<span id="codeTypeHoraireCounter"></span>
+		</div>
+		{{ form_widget(Form.codeTypeHoraire,{'value':Action.Extras.codeTypeHoraire}) }}
+		{{ form_errors(Form.codeTypeHoraire) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.codeRythmeFormation) }}
+			<span id="codeRythmeFormationCounter"></span>
+		</div>
+		{{ form_widget(Form.codeRythmeFormation,{'value':Action.Extras.codeRythmeFormation}) }}
+		{{ form_errors(Form.codeRythmeFormation) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.fraisAnpec) }}
+			<span id="fraisAnpecCounter"></span>
+		</div>
+		{{ form_widget(Form.fraisAnpec,{'value':Action.Extras.fraisAnpec}) }}
+		{{ form_errors(Form.fraisAnpec) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.fraisCertifInclusFraisAnpec) }}
+			<span id="fraisCertifInclusFraisAnpecCounter"></span>
+		</div>
+		{{ form_widget(Form.fraisCertifInclusFraisAnpec,{'value':Action.Extras.fraisCertifInclusFraisAnpec}) }}
+		{{ form_errors(Form.fraisCertifInclusFraisAnpec) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.detailFraisAnpec) }}
+			<span id="detailFraisAnpecCounter"></span>
+		</div>
+		{{ form_widget(Form.detailFraisAnpec,{'value':Action.Extras.detailFraisAnpec}) }}
+		{{ form_errors(Form.detailFraisAnpec) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.codeModeleEconomique) }}
+			<span id="codeModeleEconomiqueCounter"></span>
+		</div>
+		{{ form_widget(Form.codeModeleEconomique,{'value':Action.Extras.codeModeleEconomique}) }}
+		{{ form_errors(Form.codeModeleEconomique) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.autresServices) }}
+			<span id="autresServicesCounter"></span>
+		</div>
+		{{ form_widget(Form.autresServices,{'value':Action.Extras.autresServices}) }}
+		{{ form_errors(Form.autresServices) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.tauxTva) }}
+			<span id="tauxTvaCounter"></span>
+		</div>
+		{{ form_widget(Form.tauxTva,{'value':Action.Extras.tauxTva}) }}
+		{{ form_errors(Form.tauxTva) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.fraisHt) }}
+			<span id="fraisHtCounter"></span>
+		</div>
+		{{ form_widget(Form.fraisHt,{'value':Action.Extras.fraisHt}) }}
+		{{ form_errors(Form.fraisHt) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.fraisTtc) }}
+			<span id="fraisTtcCounter"></span>
+		</div>
+		{{ form_widget(Form.fraisTtc,{'value':Action.Extras.fraisTtc}) }}
+		{{ form_errors(Form.fraisTtc) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.existencePrerequis) }}
+			<span id="existencePrerequisCounter"></span>
+		</div>
+		{{ form_widget(Form.existencePrerequis,{'value':Action.Extras.existencePrerequis}) }}
+		{{ form_errors(Form.existencePrerequis) }}
+	</div>
+
+	<button type="submit" class="link button large">Enregistrer les modifications</button>
+
+	{{ form_end(Form) }}
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lite des formations
+{% endblock %}
+
+{% block body %}
+	<div class="tbl-header">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<tr>
+					<th>Intitulé de formation</th>
+					<th>Identifiant de l'offre</th>
+					<th>Mise à jour le</th>
+					<th>Crée le</th>
+					<th>Voir</th>
+					<th>Supprimer</th>
+
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div class="tbl-content">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+				{% for formation in Formations %}
+					<tr id="formation{{formation.id}}">
+						<td>{{formation.intituleFormation}}</td>
+						<td>{{formation.numero}}</td>
+						<td>{{formation.datemaj|date('d/m/Y')}}</td>
+						<td>{{formation.datecrea|date('d/m/Y')}}</td>
+						<td>
+							<a href="{{ path('view-formation', { 'idFormation': formation.id }) }}" class="link">
+								<i class="fa-solid fa-edit"></i>
+								Modifier
+							</a>
+						</td>
+						<td>
+							<a href="{{ path('del-formation', { 'idFormation': formation.id }) }}" class="link">
+								<i class="fa-solid fa-trash"></i>
+								Supprimer
+							</a>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	{% endblock %}

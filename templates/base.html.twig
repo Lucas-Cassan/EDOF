@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/1c64796074.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</head>
+	<body>
+		<header>
+			<nav id="header-nav" class="block">
+				<div id="header-left">
+					<h1>
+						<i class="fa-solid fa-list"></i>
+						{% if controller_name == "Formation : " %}
+							<span>{{controller_name}}
+								{{Name}}</span>
+						{% else %}
+							<span>{{controller_name}}</span>
+						{% endif %}
+					</div>
+					<div id="header-right">
+						{% if headerType == "formation" %}
+							<a class="link button" href="{{path('list-action', {'idFormation': idFormation})}}">
+								<i class="fa-solid fa-eye"></i>
+								<span>Actions de formation</span>
+							</a>
+							<a class="link button back" href="{{path('list-formation')}}">
+								<i class="fa-solid fa-list"></i>
+								<span>Retour aux formations</span>
+							</a>
+						{% elseif headerType == "listFormation" %}
+							<a class="link button" href="{{path('new-formation')}}">
+								<i class="fa-solid fa-plus"></i>
+								<span>Ajouter une formation</span>
+							</a>
+							<a class="link button back" href="{{path('app-global')}}">
+								<i class="fa-solid fa-edit"></i>
+								<span>Informations générales</span>
+							</a>
+							<a class="link button back" href="#">
+								<i class="fa-solid fa-cloud-arrow-down"></i>
+								<span>Générer le XML</span>
+							</a>
+						{% elseif headerType == "action" %}
+							<a class="link button" href="{{path('list-action', {'idFormation' : idFormation})}}">
+								<i class="fa-solid fa-list"></i>
+								<span>Retour aux actions</span>
+							</a>
+						{% elseif headerType == "listAction" %}
+							<a class="link button" href="{{path('new-action', { 'idFormation': idFormation })}}">
+								<i class="fa-solid fa-plus"></i>
+								<span>Ajouter une action</span>
+							</a>
+							<a class="link button back" href="{{path('view-formation', {'idFormation' : idFormation})}}">
+								<i class="fa-solid fa-list"></i>
+								<span>Retour à la formation</span>
+							</a>
+						{% elseif headerType == "add" %}
+							<a class="link button back" href="{{path('list-formation')}}">
+								<i class="fa-solid fa-home"></i>
+								<span>Accueil</span>
+							</a>
+						{% endif %}
+					</div>
+				</ul>
+			</nav>
+		</header>
+		<div id="main" class="{{ controller_name }}"> {% block body %}{% endblock %}
+			</div>
+		</body>
+	</html>

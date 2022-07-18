@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une session
+{% endblock %}
+
+{% block body %}
+	{{ form_start(Form, {'attr': {'id': 'form' }}) }}
+
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.numero) }}
+			<span id="numeroCounter"></span>
+		</div>
+		{{ form_widget(Form.numero) }}
+		{{ form_errors(Form.numero) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.debut) }}
+			<span id="debutCounter"></span>
+		</div>
+		{{ form_widget(Form.debut) }}
+		{{ form_errors(Form.debut) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.fin) }}
+			<span id="finCounter"></span>
+		</div>
+		{{ form_widget(Form.fin) }}
+		{{ form_errors(Form.fin) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.etatRecrutement) }}
+			<span id="etatRecrutementCounter"></span>
+		</div>
+		{{ form_widget(Form.etatRecrutement) }}
+		{{ form_errors(Form.etatRecrutement) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.modalitesParticulieres) }}
+			<span id="modalitesParticulieresCounter"></span>
+		</div>
+		{{ form_widget(Form.modalitesParticulieres) }}
+		{{ form_errors(Form.modalitesParticulieres) }}
+	</div>
+
+
+	<button type="submit" class="link button large">Créer une session</button>
+
+	{{ form_end(Form) }}
+{% endblock %}

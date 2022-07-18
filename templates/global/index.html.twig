@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modification des informations
+{% endblock %}
+
+{% block body %}
+	{{ form_start(Form, {'attr': {'id': 'form' }}) }}
+
+	{# <div class="input">
+					<div class="title">
+						{{ form_label(Form.numero) }}
+						<span id="numeroCounter"></span>
+					</div>
+					{{ form_widget(Form.numero) }}
+					{{ form_errors(Form.numero) }}
+				</div> #}
+
+	<button type="submit" class="link button large">Enregistrer les modifications</button>
+
+	{{ form_end(Form) }}
+{% endblock %}

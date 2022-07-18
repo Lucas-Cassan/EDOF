@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Actions de la formation :
+	{{nameFormation}}
+{% endblock %}
+
+{% block body %}
+	<div class="tbl-header">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<tr>
+					<th>Identifiant de l'action</th>
+					<th>Mise à jour le</th>
+					<th>Crée le</th>
+					<th>Voir</th>
+					<th>Supprimer</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div class="tbl-content">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+				{% for action in Actions %}
+					<tr id="formation{{action.id}}">
+						<td>{{action.numero}}</td>
+						<td>{{action.datemaj|date('d/m/Y')}}</td>
+						<td>{{action.datecrea|date('d/m/Y')}}</td>
+						<td>
+							<a href="{{ path('view-action', { 'idAction': action.id }) }}" class="link">
+								<i class="fa-solid fa-edit"></i>
+								Modifier
+							</a>
+						</td>
+						<td>
+							<a href="{{ path('del-action', { 'idAction': action.id }) }}" class="link">
+								<i class="fa-solid fa-trash"></i>
+								Supprimer
+							</a>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	{% endblock %}

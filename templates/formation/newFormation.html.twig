@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une formation
+{% endblock %}
+
+{% block body %}
+	{{ form_start(Form, {'attr': {'id': 'form' }}) }}
+
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.numero) }}
+			<span id="numeroCounter"></span>
+		</div>
+		{{ form_widget(Form.numero) }}
+		{{ form_errors(Form.numero) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.intituleFormation) }}
+			<span id="intituleFormationCounter"></span>
+		</div>
+		{{ form_widget(Form.intituleFormation) }}
+		{{ form_errors(Form.intituleFormation) }}
+	</div>
+
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.objectifFormation) }}
+			<span id="objectifFormationCounter"></span>
+		</div>
+		{{ form_widget(Form.objectifFormation) }}
+		{{ form_errors(Form.objectifFormation) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.resultatsAttendus) }}
+			<span id="resultatsAttendusCounter"></span>
+		</div>
+		{{ form_widget(Form.resultatsAttendus) }}
+		{{ form_errors(Form.resultatsAttendus) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.contenuFormation) }}
+			<span id="contenuFormationCounter"></span>
+		</div>
+		{{ form_widget(Form.contenuFormation) }}
+		{{ form_errors(Form.contenuFormation) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.parcoursDeFormation) }}
+			<span id="parcoursDeFormationCounter"></span>
+		</div>
+		{{ form_widget(Form.parcoursDeFormation) }}
+		{{ form_errors(Form.parcoursDeFormation) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.objectifGeneralFormation) }}
+			<span id="objectifGeneralFormationCounter"></span>
+		</div>
+		{{ form_widget(Form.objectifGeneralFormation) }}
+		{{ form_errors(Form.objectifGeneralFormation) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.certifInfo) }}
+			<span id="certifInfoCounter"></span>
+		</div>
+		{{ form_widget(Form.certifInfo) }}
+		{{ form_errors(Form.certifInfo) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.extraResumeContenu) }}
+			<span id="extraResumeContenuCounter"></span>
+		</div>
+		{{ form_widget(Form.extraResumeContenu) }}
+		{{ form_errors(Form.extraResumeContenu) }}
+	</div>
+
+	<button type="submit" class="link button large">Créer la formation</button>
+
+	{{ form_end(Form) }}
+{% endblock %}
