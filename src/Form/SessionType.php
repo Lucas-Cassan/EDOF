@@ -50,6 +50,21 @@ class SessionType extends AbstractType
                 'required' => false,
                 'label' => 'Modalités particulières.',
                 'attr' => ['maxlength' => 3000],
+            ])
+            ->add('garantie', ChoiceType::class, [
+                'mapped' => false,
+                'choices' => [
+                    'Non' => 0,
+                    'Oui' => 1
+                ],
+                'placeholder' => 'Choisie une option',
+                'required' => true,
+                'label' => 'Garantie *',
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Veuillez séléctionner la garantie.',
+                    ]),
+                ],
             ]);
     }
 

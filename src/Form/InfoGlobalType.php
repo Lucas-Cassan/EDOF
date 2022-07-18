@@ -43,7 +43,7 @@ class InfoGlobalType extends AbstractType
             ->add('nomOrganisme', TextType::class, [
                 'mapped' => false,
                 'required' => true,
-                'label' => 'Nom de l’organisme*',
+                'label' => 'Nom de l’organisme *',
                 'attr' => ['maxlength' => 30],
                 'constraints' => [
                     new NotBlank([
@@ -121,7 +121,7 @@ class InfoGlobalType extends AbstractType
                     ]),
                 ],
             ])
-            ->add('libelleVoie', NumberType::class, [
+            ->add('libelleVoie', TextType::class, [
                 'mapped' => false,
                 'required' => true,
                 'label' => 'Libellé de voie *',

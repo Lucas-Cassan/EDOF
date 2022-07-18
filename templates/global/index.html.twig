@@ -6,14 +6,110 @@
 {% block body %}
 	{{ form_start(Form, {'attr': {'id': 'form' }}) }}
 
-	{# <div class="input">
-					<div class="title">
-						{{ form_label(Form.numero) }}
-						<span id="numeroCounter"></span>
-					</div>
-					{{ form_widget(Form.numero) }}
-					{{ form_errors(Form.numero) }}
-				</div> #}
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.accesHandicapes) }}
+			<span id="accesHandicapesCounter"></span>
+		</div>
+		{{ form_widget(Form.accesHandicapes,{'value':Infos.accesHandicapes}) }}
+		{{ form_errors(Form.accesHandicapes) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.numero) }}
+			<span id="numeroCounter"></span>
+		</div>
+		{{ form_widget(Form.numero,{'value':Infos.infos.numero}) }}
+		{{ form_errors(Form.numero) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.nomOrganisme) }}
+			<span id="nomOrganismeCounter"></span>
+		</div>
+		{{ form_widget(Form.nomOrganisme,{'value':Infos.infos.nomOrganisme}) }}
+		{{ form_errors(Form.nomOrganisme) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.nom) }}
+			<span id="nomCounter"></span>
+		</div>
+		{{ form_widget(Form.nom,{'value':Infos.infos.nom}) }}
+		{{ form_errors(Form.nom) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.prenom) }}
+			<span id="prenomCounter"></span>
+		</div>
+		{{ form_widget(Form.prenom,{'value':Infos.infos.prenom}) }}
+		{{ form_errors(Form.prenom) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.Ville) }}
+			<span id="VilleCounter"></span>
+		</div>
+		{{ form_widget(Form.Ville,{'value':Infos.infos.Ville}) }}
+		{{ form_errors(Form.Ville) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.cp) }}
+			<span id="cpCounter"></span>
+		</div>
+		{{ form_widget(Form.cp,{'value':Infos.infos.cp}) }}
+		{{ form_errors(Form.cp) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.numeroVoie) }}
+			<span id="numeroVoieCounter"></span>
+		</div>
+		{{ form_widget(Form.numeroVoie,{'value':Infos.infos.numeroVoie}) }}
+		{{ form_errors(Form.numeroVoie) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.natureVoie) }}
+			<span id="natureVoieCounter"></span>
+		</div>
+		{{ form_widget(Form.natureVoie,{'value':Infos.infos.natureVoie}) }}
+		{{ form_errors(Form.natureVoie) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.libelleVoie) }}
+			<span id="libelleVoieCounter"></span>
+		</div>
+		{{ form_widget(Form.libelleVoie,{'value':Infos.infos.libelleVoie}) }}
+		{{ form_errors(Form.libelleVoie) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.telfix) }}
+			<span id="telfixCounter"></span>
+		</div>
+		{{ form_widget(Form.telfix,{'value':Infos.infos.telfix}) }}
+		{{ form_errors(Form.telfix) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.email) }}
+			<span id="emailCounter"></span>
+		</div>
+		{{ form_widget(Form.email,{'value':Infos.infos.email}) }}
+		{{ form_errors(Form.email) }}
+	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.garantie) }}
+			<span id="garantieCounter"></span>
+		</div>
+		{{ form_widget(Form.garantie,{'value':Infos.infos.garantie}) }}
+		{{ form_errors(Form.garantie) }}
+	</div>
 
 	<button type="submit" class="link button large">Enregistrer les modifications</button>
 

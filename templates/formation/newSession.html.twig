@@ -46,6 +46,14 @@
 		{{ form_widget(Form.modalitesParticulieres) }}
 		{{ form_errors(Form.modalitesParticulieres) }}
 	</div>
+	<div class="input">
+		<div class="title">
+			{{ form_label(Form.garantie) }}
+			<span id="garantieCounter"></span>
+		</div>
+		{{ form_widget(Form.garantie) }}
+		{{ form_errors(Form.garantie) }}
+	</div>
 
 
 	<button type="submit" class="link button large">Créer une session</button>

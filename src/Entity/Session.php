@@ -37,6 +37,9 @@ class Session
     #[ORM\ManyToOne(targetEntity: Action::class, inversedBy: 'sessions')]
     private $Action;
 
+    #[ORM\Column(type: 'integer')]
+    private $Garantie;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -134,6 +137,18 @@ class Session
     public function setAction(?Action $Action): self
     {
         $this->Action = $Action;
+
+        return $this;
+    }
+
+    public function getGarantie(): ?int
+    {
+        return $this->Garantie;
+    }
+
+    public function setGarantie(int $Garantie): self
+    {
+        $this->Garantie = $Garantie;
 
         return $this;
     }

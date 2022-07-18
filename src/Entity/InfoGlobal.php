@@ -19,6 +19,9 @@ class InfoGlobal
     #[ORM\Column(type: 'string', length: 250)]
     private $accesHandicapes;
 
+    #[ORM\Column(type: 'string', length: 14)]
+    private $siret;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -44,6 +47,18 @@ class InfoGlobal
     public function setAccesHandicapes(string $accesHandicapes): self
     {
         $this->accesHandicapes = $accesHandicapes;
+
+        return $this;
+    }
+
+    public function getSiret(): ?string
+    {
+        return $this->siret;
+    }
+
+    public function setSiret(string $siret): self
+    {
+        $this->siret = $siret;
 
         return $this;
     }
