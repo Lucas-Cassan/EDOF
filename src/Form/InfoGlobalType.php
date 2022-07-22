@@ -153,6 +153,16 @@ class InfoGlobalType extends AbstractType
                         'message' => 'Veuillez renseigner votre adresse mail.',
                     ]),
                 ],
+            ])
+            ->add('siret', TextType::class, [
+                'required' => true,
+                'label' => 'SIRET *',
+                'attr' => ['maxlength' => 14],
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Veuillez renseigner votre numéro de siret.',
+                    ]),
+                ],
             ]);
     }
 

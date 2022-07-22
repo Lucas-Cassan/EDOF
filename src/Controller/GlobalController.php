@@ -36,7 +36,7 @@ class GlobalController extends AbstractController
                 'libelleVoie' => $form->get('libelleVoie')->getData(),
                 'telfix' => $form->get('telfix')->getData(),
                 'email' => $form->get('email')->getData(),
-                'garantie' => $form->get('garantie')->getData(),
+                'siret' => $form->get('siret')->getData(),
             ];
 
             $Global->setAccesHandicapes($form->get('accesHandicapes')->getData());

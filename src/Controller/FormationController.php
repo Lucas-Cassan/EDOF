@@ -10,6 +10,7 @@ use App\Entity\Session;
 use App\Form\SessionType;
 use App\Repository\ActionRepository;
 use App\Repository\FormationRepository;
+use App\Repository\SessionRepository;
 use DateTimeZone;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -356,19 +357,61 @@ class FormationController extends AbstractController
             $Session->setFin($form->get('fin')->getData());
             $Session->setEtatRecrutement($form->get('etatRecrutement')->getData());
             $Session->setAction($ActionSelect);
+            $Session->setGarantie($form->get('garantie')->getData());
 
             $Extras = [
-                'TEST OK EXTRAS'
+                "modalitesParticulieres" => $form->get('modalitesParticulieres')->getData()
             ];
 
             $Session->setExtras($Extras);
 
             $em->persist($Session);
             $em->flush();
+
+            return $this->redirectToRoute(
+                'list-formation'
+            );
         };
         return $this->render('formation/newSession.html.twig', [
             'controller_name' => 'Ajouter une session',
+            'headerType' => 'add',
             'Form' => $form->createView(),
         ]);
+    }
+
+    /**
+     * @Route("/list-session/{idAction}", name="list-session")
+     */
+    public function listSession(ActionRepository $ActionRepository, $idAction, SessionRepository $sessionRepository): Response
+    {
+        $Session = $sessionRepository->findBy(
+            ['Action' => $idAction],
+        );
+        $Action = $ActionRepository->find($idAction);
+
+        return $this->render('formation/listSession.html.twig', [
+            'controller_name' => 'Sessions de l’action : ' . $Action->getNumero(),
+            'headerType' => 'listSession',
+            'Sessions' => $Session,
+            'idAction' => $idAction,
+            'nameAction' => $Action->getNumero()
+        ]);
+    }
+
+    /**
+     * @Route("/supp-session/{idSession}", name="del-session")
+     */
+    public function delSession(SessionRepository $sessionRepository, ManagerRegistry $doctrine, $idSession): Response
+    {
+        $sessionSelect = $sessionRepository->find($idSession);
+        $actionSelect = $sessionSelect->getAction()->getId();
+
+        $em = $doctrine->getManager();
+        $em->remove($sessionSelect);
+        $em->flush();
+
+        return $this->redirectToRoute(
+            'list-action/' . $actionSelect,
+        );
     }
 }

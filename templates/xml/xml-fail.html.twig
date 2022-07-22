@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Erreur lors de la génération du XML
+{% endblock %}
+
+{% block body %}
+	<div class="tbl-header">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Identifiant</th>
+
+					<th>Voir</th>
+					<th>Supprimer</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div class="tbl-content">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+				{% for Formation in FormationsFails %}
+					<tr id="formation{{Formation.id}}"></tr>
+					<td>Formation</td>
+					<td>{{Formation.numero}}</td>
+					<td>
+						<a href="{{ path('new-action', { 'idFormation': Formation.id }) }}" class="link">
+							<i class="fa-solid fa-edit"></i>
+							Créer
+						</a>
+					</td>
+					<td>
+						<a href="{{ path('del-formation', { 'idFormation': Formation.id }) }}" class="link">
+							<i class="fa-solid fa-trash"></i>
+							Supprimer
+						</a>
+					</td>
+				</tr>
+			{% endfor %}
+			{% for Action in ActionsFails %}
+				<tr id="formation{{Action.id}}"></tr>
+				<td>Action</td>
+				<td>{{Action.numero}}</td>
+				<td>
+					<a href="{{ path('new-session', { 'idAction': Action.id }) }}" class="link">
+						<i class="fa-solid fa-edit"></i>
+						Créer
+					</a>
+				</td>
+				<td>
+					<a href="{{ path('del-action', { 'idAction': Action.id }) }}" class="link">
+						<i class="fa-solid fa-trash"></i>
+						Supprimer
+					</a>
+				</td>
+			</tr>
+		{% endfor %}
+
+	</tbody>
+</table>{% endblock %}

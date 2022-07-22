@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='ISO-8859-1'?><lheo xmlns='https://www.of.moncompteformation.gouv.fr'><offres><formation numero='WORDPRESS' datemaj='20220721' datecrea='20220721'>
+      <intitule-formation>Creation site wordpress</intitule-formation>
+      <objectif-formation><![CDATA[<h5 class="panel-body-section-icon">
+					<span class="material-icons">task_alt</span>
+					A l'issue de cette formation vous saurez :
+				</h5>
+
+				<ul>
+					<li>Choisir un h&eacutebergement</li>
+					<li>Installer WordPress</li>
+					<li>Cr&eacuteer des pages et articles</li>
+					<li>Installer des modules</li>
+					<li>Mettre &agrave jour votre site</li>
+					<li>Enregistrer son site sur Google</li>
+					<li>Am&eacuteliorer son r&eacutef&eacuterencement</li>
+				</ul>
+
+				<div>
+					<img src="https://absys-formation.fr/wp-content/uploads/2021/09/google-avis-client.png" width="100">
+						<i>Bas&eacute sur les avis de nos apprenants</i>
+					</div>]]></objectif-formation>
+      <resultats-attendus><![CDATA[<p class="panel-body-section-icon">
+					<span class="material-icons">verified</span>
+					&agrave la fin de la formation, le stagiaire passe la certification  "Edition site Web Wordpress" </p>
+					<p class="panel-body-section-icon">
+					<span class="material-icons">library_books</span>
+					La certification se pr&eacutesente sous la forme d'un questionnaire de 36 questions auxquelles vous devez r&eacutepondre en 35 minutes.</p>]]></resultats-attendus>
+      <contenu-formation><![CDATA[<h5 class="panel-body-section-icon">
+					<span class="material-icons">language</span>Notre formation :</h5>
+				<ul>
+					<li>Comprendre les concepts et termes cl&eacutes du web</li>
+					<li>Conna&icirctre les principes de base du HTML</li>
+					<li>Reconna&icirctre et utiliser les formats d'image web courants</li>
+					<li>D&eacutefinir ce qu'est un CMS</li>
+				</ul>
+				<h5 class="panel-body-section-icon">
+					<span class="material-icons">wordpress</span>WordPress :</h5>
+				<ul>
+					<li>Identifier les avantages et inconv&eacutenients de Wordpress</li>
+					<li>Installer Wordpress en local sur son ordinateur</li>
+					<li>Identifier les fonctions des &eacutel&eacutements du tableau de bord</li>
+					<li>Installer un th&egraveme et des extensions</li>
+					<li>Cr&eacuteer des pages et des articles avec Elementor</li>
+					<li>Cr&eacuteer un menu</li>
+					<li>Utiliser les widgets</li>
+					<li>Ajouter un formulaire de contact</li>
+					<li>Identifier les extensions indispensables</li>
+					<li>G&eacuterer son site Wordpress</li>
+					<li>Cr&eacuteer des utilisateurs</li>
+				</ul>
+				<h5 class="panel-body-section-icon">
+					<span class="material-icons">add_task</span>Autres :</h5>
+				<ul>
+					<li>Enregistrer son site sur Google</li>
+					<li>Am&eacuteliorer le r&eacutef&eacuterencement de son site</li>
+					<li>Utiliser h&eacutebergement adapt&eacute &agrave ses besoins</li>
+				</ul>]]></contenu-formation>
+      <parcours-de-formation>2</parcours-de-formation>
+      <objectif-general-formation>2</objectif-general-formation>
+      <certification>
+        <code-CERTIFINFO>112560</code-CERTIFINFO>
+      </certification>
+      
+      <action numero='WORDPRESS-ACTION-1' datemaj='20220721' datecrea='20220721'>
+        <niveau-entree-obligatoire>0</niveau-entree-obligatoire>
+        <modalites-enseignement>1</modalites-enseignement>
+        <conditions-specifiques><![CDATA[Savoirs et savoir-faire pr&eacuterequis.]]></conditions-specifiques>
+        <lieu-de-formation>
+          <coordonnees numero='Organisme de formation'>
+            <nom>GOdiveau</nom>
+            <prenom>William</prenom>
+            <adresse numero='Organisme de formation'>
+              <ligne>Absys Formation</ligne>
+              <codepostal>34000</codepostal>
+              <ville>Montpellier</ville>
+              <extras info='adresse'>
+                <extra info='numero-voie'>48</extra>
+                <extra info='code-nature-voie'>RUE</extra>
+                <extra info='libelle-voie'>Claude Balbastre</extra>
+                <extra info='conformite-reglementaire'>1</extra>
+              </extras>
+            </adresse>
+            <telfixe>
+              <numtel>0695330637</numtel>
+            </telfixe>
+            <courriel>contact@absys-formation.fr</courriel>
+          </coordonnees>
+        </lieu-de-formation>
+        <modalites-entrees-sorties>1</modalites-entrees-sorties>
+                    <session numero='WORDPRESS-SESSION-1' datemaj='20220721' datecrea='20220721'>
+                    <adresse-inscription>
+                       <adresse numero='Organisme de formation'>
+                        <ligne>Absys Formation</ligne>
+                        <codepostal>34000</codepostal>
+                        <ville>Montpellier</ville>
+                        <extras info='adresse'>
+                            <extra info='numero-voie'>48</extra>
+                            <extra info='code-nature-voie'>RUE</extra>
+                            <extra info='libelle-voie'>Claude Balbastre</extra>
+                            <extra info='conformite-reglementaire'>1</extra>
+                        </extras>
+                        </adresse>
+                    </adresse-inscription>
+                    <etat-recrutement>1</etat-recrutement>
+                    <extras info='session'>
+                        <extra info='contact-inscription'>
+                        <coordonnees numero='Organisme de formation'>
+                            <nom>GOdiveau</nom>
+                            <prenom>William</prenom>
+                            <telfixe>
+                                <numtel>0695330637</numtel>
+                            </telfixe>
+                            <courriel>contact@absys-formation.fr</courriel>
+                        </coordonnees>
+                        </extra>
+                        <extra info='garantie'>1</extra>
+                        <extra info='modalites-particulieres'><![CDATA[]]></extra>
+                    </extras>
+                    </session>
+                    
+        <adresse-information>
+          <adresse numero='Organisme de formation'>
+            <ligne>Absys Formation</ligne>
+            <codepostal>34000</codepostal>
+            <ville>Montpellier</ville>
+            <extras info='adresse'>
+               <extra info='numero-voie'>48</extra>
+                <extra info='code-nature-voie'>RUE</extra>
+                <extra info='libelle-voie'>Claude Balbastre</extra>
+              <extra info='conformite-reglementaire'>1</extra>
+            </extras>
+          </adresse>
+        </adresse-information>
+        <acces-handicapes><![CDATA[Acc&egraves handicap&eacutes]]></acces-handicapes>
+        <langue-formation>FR</langue-formation>
+        <modalites-pedagogiques><![CDATA[<ul>
+						<li>Visioconf&eacuterence</li>
+						<li>Quizz en d&eacutebut parcours</li>
+						<li>Assistance p&eacutedagogique par t&eacutel&eacutephone et e-mail</li>
+						<li>Plateforme de discussion </li>
+					</ul>]]></modalites-pedagogiques>
+        <extras info='action'>
+          <extra info='contact-information'>
+            <coordonnees numero='Organisme de formation'>
+              <nom>GOdiveau</nom>
+            <prenom>William</prenom>
+              <telfixe>
+                <numtel>0695330637</numtel>
+              </telfixe>
+              <courriel>contact@absys-formation.fr</courriel>
+            </coordonnees>
+          </extra>
+          <extra info='modalites-handicap'><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p>
+								<i>Plus d'informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a>
+								</i>]]></extra>
+          <extra info='info-admission'><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">call</span>Entretien t&eacutel&eacutephonique :</h5><ul><li>Questionnaire sur les motivations et attentes.</li><li>V&eacuterification de la pertinence de la formation choisie.</li><ul>]]></extra>
+          <extras info='codes-modalites-admission'><extra info='code-modalites-admission'>99999</extra>
+          </extras>
+          <extras info='codes-rythme-formation'>
+            <extra info='code-rythme-formation'>7</extra>
+          </extras>
+          <extra info='code-type-horaires'>1</extra>
+          <extra info='frais-certif-inclus-frais-anpec'>0</extra>
+          <extra info='code-modele-economique'>2</extra>
+          <extras info='frais-pedagogiques'>
+            <extra info='taux-tva'>0.0</extra>
+            <extra info='frais-ht'>1350</extra>
+            <extra info='frais-ttc'>1350</extra>
+          </extras>
+          <extra info='existence-prerequis'>0</extra>
+        </extras>
+      </action>            
+                <organisme-formation-responsable>
+        <SIRET-organisme-formation>
+          <SIRET>87818694900029</SIRET>
+        </SIRET-organisme-formation>
+      </organisme-formation-responsable>
+      <extras info='formation'>
+        <extra info='resume-contenu'><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">done_all</span> Formateur expert
+</p><p class="panel-body-section-icon"><span class="material-icons">verified</span>Formation certifiante</p>]]></extra>
+      </extras>
+    </formation>
+            <formation numero='VOLTAIRE' datemaj='20220721' datecrea='20220721'>
+      <intitule-formation>Projet Voltaire - Orthographe - E-learing + Visio</intitule-formation>
+      <objectif-formation><![CDATA[<h5 class="panel-body-section-icon">
+				<span class="material-icons">task_alt</span>
+				A l'issue de cette formation vous saurez :
+				</h5>
+
+				<ul>
+				<li>Respecter les r&egravegles orthographiques</li> 
+				<li>Conjuguer et accorder les verbes</li> 
+				<li>Choisir les bons mots en fonction du contexte</li>
+				<li>Perfectionner vos &eacutecrits personnels ou professionnels</li>
+				</ul>
+
+				<div>
+				<img src="https://absys-formation.fr/wp-content/uploads/2021/09/google-avis-client.png" width="100">
+				<i>Bas&eacute sur les avis de nos apprenants</i>
+				</div>]]></objectif-formation>
+      <resultats-attendus><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">
+				verified</span>
+				&agrave la fin de la formation, le stagiaire passe la certification  "Certificat Voltaire" en centre d'examen
+				</p>]]></resultats-attendus>
+      <contenu-formation><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">language</span>Notre formation:</h5>
+				<p> La formation se compose de plusieurs modules. En fonction de votre test d&#39&eacutevaluation de d&eacutepart, votre parcours commencera par «Fondamentaux Campus + Pro + Pont Sup » ou « Sup&eacuterieur ». Vous terminerez par les modules communs «Orthographie » et « Excellence ».<p>
+
+				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> Fondamentaux Campus :</h5>
+	
+				<ul>
+				<li>Le genre et le nombre des noms</li>
+				<li>Les adjectifs qualificatifs</li>
+				<li>Les compl&eacutements d&#39objet</li>
+				<li>La c&eacutedille</li>
+				<li>Les adverbes</li>
+				</ul>
+
+				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> Pro + et Pont sup&eacuterieur ( Module accessible en fonction de votre Test de d&eacutepart)  :</h5>
+	
+				<ul>
+				<li>Accords (adjectifs, participes pass&eacutes).</li>
+				<li>Conjugaison simple : pr&eacutesent, imparfait, futur, conditionnel, imp&eacuteratif.</li>
+
+				</ul>
+
+				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> « Sup&eacuterieur » ( Module accessible en fonction de votre Test de d&eacutepart)  :</h5>
+				<p> Travail approfondi sur 140 r&egravegles non ma'tris&eacutees, rassembl&eacutees sur 10 niveaux class&eacutes dans un
+				ordre croissant de difficult&eacute (14 r&egravegles par niveau) > temps estim&eacute : 8 heures.</p>
+				<p> R&eacutevision des 10 niveaux (reprise des 140 r&egravegles) avec remise &agrave niveau sur les derniers points non ma'tris&eacutes
+				temps estim&eacute : 2 heures. </p>
+				<em>Temps pass&eacute : le temps r&eacuteel pass&eacute sur chacune des 140 r&egravegles d&eacutependra du niveau du stagiaire, &eacutevalu&eacute
+				au d&eacutebut de chaque niveau.</em>
+				<ul>
+				<li>Accords : adjectifs, participes pass&eacutes.</li>
+				<li>Conjugaison simple : pr&eacutesent, imparfait, futur, conditionnel, imp&eacuteratif.</li>
+
+				</ul>
+
+				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> Orthographie  :</h5>
+				<p> 24 r&egravegles sur 4 niveaux. Le module Orthotypographie du Projet Voltaire permet de voir ou revoir les 24
+				r&egravegles les plus couramment utilis&eacutees dans nos &eacutecrits..</p>
+
+				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> Excellence  :</h5>
+				<p> Travail approfondi sur 200 r&egravegles non ma'tris&eacutees et rassembl&eacutees sur 14 niveaux class&eacutes dans un ordre croissant de difficult&eacute > temps estim&eacute : 10 heures.</p>
+				<p> ->R&eacutevision des 14 niveaux (reprise des 200 r&egravegles) avec remise &agrave niveau sur les derniers points non ma'tris&eacutes
+ 				temps estim&eacute : 2 heures.</p>
+				<em> Temps pass&eacute : le temps r&eacuteel pass&eacute sur chacune des 200 r&egravegles d&eacutependra du niveau du stagiaire, &eacutevalu&eacute
+				au d&eacutebut de chaque niveau.</em>]]></contenu-formation>
+      <parcours-de-formation>2</parcours-de-formation>
+      <objectif-general-formation>2</objectif-general-formation>
+      <certification>
+        <code-CERTIFINFO>84714</code-CERTIFINFO>
+      </certification>
+      
+      <action numero='VOLTAIRE-ACTION-1' datemaj='20220721' datecrea='20220721'>
+        <niveau-entree-obligatoire>0</niveau-entree-obligatoire>
+        <modalites-enseignement>1</modalites-enseignement>
+        <conditions-specifiques><![CDATA[Savoirs et savoir-faire pr&eacuterequis.]]></conditions-specifiques>
+        <lieu-de-formation>
+          <coordonnees numero='Organisme de formation'>
+            <nom>GOdiveau</nom>
+            <prenom>William</prenom>
+            <adresse numero='Organisme de formation'>
+              <ligne>Absys Formation</ligne>
+              <codepostal>34000</codepostal>
+              <ville>Montpellier</ville>
+              <extras info='adresse'>
+                <extra info='numero-voie'>48</extra>
+                <extra info='code-nature-voie'>RUE</extra>
+                <extra info='libelle-voie'>Claude Balbastre</extra>
+                <extra info='conformite-reglementaire'>1</extra>
+              </extras>
+            </adresse>
+            <telfixe>
+              <numtel>0695330637</numtel>
+            </telfixe>
+            <courriel>contact@absys-formation.fr</courriel>
+          </coordonnees>
+        </lieu-de-formation>
+        <modalites-entrees-sorties>1</modalites-entrees-sorties>
+                    <session numero='VOLTAIRE-SESSION-1' datemaj='20220721' datecrea='20220721'>
+                    <adresse-inscription>
+                       <adresse numero='Organisme de formation'>
+                        <ligne>Absys Formation</ligne>
+                        <codepostal>34000</codepostal>
+                        <ville>Montpellier</ville>
+                        <extras info='adresse'>
+                            <extra info='numero-voie'>48</extra>
+                            <extra info='code-nature-voie'>RUE</extra>
+                            <extra info='libelle-voie'>Claude Balbastre</extra>
+                            <extra info='conformite-reglementaire'>1</extra>
+                        </extras>
+                        </adresse>
+                    </adresse-inscription>
+                    <etat-recrutement>1</etat-recrutement>
+                    <extras info='session'>
+                        <extra info='contact-inscription'>
+                        <coordonnees numero='Organisme de formation'>
+                            <nom>GOdiveau</nom>
+                            <prenom>William</prenom>
+                            <telfixe>
+                                <numtel>0695330637</numtel>
+                            </telfixe>
+                            <courriel>contact@absys-formation.fr</courriel>
+                        </coordonnees>
+                        </extra>
+                        <extra info='garantie'>1</extra>
+                        <extra info='modalites-particulieres'><![CDATA[]]></extra>
+                    </extras>
+                    </session>
+                    
+        <adresse-information>
+          <adresse numero='Organisme de formation'>
+            <ligne>Absys Formation</ligne>
+            <codepostal>34000</codepostal>
+            <ville>Montpellier</ville>
+            <extras info='adresse'>
+               <extra info='numero-voie'>48</extra>
+                <extra info='code-nature-voie'>RUE</extra>
+                <extra info='libelle-voie'>Claude Balbastre</extra>
+              <extra info='conformite-reglementaire'>1</extra>
+            </extras>
+          </adresse>
+        </adresse-information>
+        <acces-handicapes><![CDATA[Acc&egraves handicap&eacutes]]></acces-handicapes>
+        <langue-formation>FR</langue-formation>
+        <modalites-pedagogiques><![CDATA[<ul>
+						<li>Visioconf&eacuterence</li>
+						<li>Quizz en d&eacutebut parcours</li>
+						<li>Assistance p&eacutedagogique par t&eacutel&eacutephone et e-mail</li>
+						<li>Plateforme de discussion </li>
+					</ul>]]></modalites-pedagogiques>
+        <extras info='action'>
+          <extra info='contact-information'>
+            <coordonnees numero='Organisme de formation'>
+              <nom>GOdiveau</nom>
+            <prenom>William</prenom>
+              <telfixe>
+                <numtel>0695330637</numtel>
+              </telfixe>
+              <courriel>contact@absys-formation.fr</courriel>
+            </coordonnees>
+          </extra>
+          <extra info='modalites-handicap'><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p><i>Plus d'informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a></i>]]></extra>
+          <extra info='info-admission'><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">call</span>Entretien t&eacutel&eacutephonique :</h5><ul><li>Questionnaire sur les motivations et attentes.</li><li>V&eacuterification de la pertinence de la formation choisie.</li><ul>]]></extra>
+          <extras info='codes-modalites-admission'><extra info='code-modalites-admission'>99999</extra>
+          </extras>
+          <extras info='codes-rythme-formation'>
+            <extra info='code-rythme-formation'>7</extra>
+          </extras>
+          <extra info='code-type-horaires'>1</extra>
+          <extra info='frais-certif-inclus-frais-anpec'>0</extra>
+          <extra info='code-modele-economique'>2</extra>
+          <extras info='frais-pedagogiques'>
+            <extra info='taux-tva'>0.0</extra>
+            <extra info='frais-ht'>1190</extra>
+            <extra info='frais-ttc'>1190</extra>
+          </extras>
+          <extra info='existence-prerequis'>0</extra>
+        </extras>
+      </action>            
+                <organisme-formation-responsable>
+        <SIRET-organisme-formation>
+          <SIRET>87818694900029</SIRET>
+        </SIRET-organisme-formation>
+      </organisme-formation-responsable>
+      <extras info='formation'>
+        <extra info='resume-contenu'><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">done_all</span> Formateur expert
+				</p><p class="panel-body-section-icon"><span class="material-icons">verified</span>Formation certifiante</p>]]></extra>
+      </extras>
+    </formation>
+            </offres></lheo>

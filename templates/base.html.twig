@@ -60,6 +60,10 @@
 								<span>Générer le XML</span>
 							</a>
 						{% elseif headerType == "action" %}
+							<a class="link button" href="{{path('list-session', {'idAction': idAction})}}">
+								<i class="fa-solid fa-eye"></i>
+								<span>Session de l'action</span>
+							</a>
 							<a class="link button" href="{{path('list-action', {'idFormation' : idFormation})}}">
 								<i class="fa-solid fa-list"></i>
 								<span>Retour aux actions</span>
@@ -73,6 +77,18 @@
 								<i class="fa-solid fa-list"></i>
 								<span>Retour à la formation</span>
 							</a>
+						{% elseif headerType == "session" %}
+
+						{% elseif headerType == "listSession" %}
+							<a class="link button" href="{{path('new-session', { 'idAction': idAction })}}">
+								<i class="fa-solid fa-plus"></i>
+								<span>Ajouter une session</span>
+							</a>
+							<a class="link button back" href="{{path('view-action', {'idAction' : idAction})}}">
+								<i class="fa-solid fa-list"></i>
+								<span>Retour à l'action</span>
+							</a>
+
 						{% elseif headerType == "add" %}
 							<a class="link button back" href="{{path('list-formation')}}">
 								<i class="fa-solid fa-home"></i>

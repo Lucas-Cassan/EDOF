@@ -104,12 +104,13 @@
 	</div>
 	<div class="input">
 		<div class="title">
-			{{ form_label(Form.garantie) }}
-			<span id="garantieCounter"></span>
+			{{ form_label(Form.siret) }}
+			<span id="siretCounter"></span>
 		</div>
-		{{ form_widget(Form.garantie,{'value':Infos.infos.garantie}) }}
-		{{ form_errors(Form.garantie) }}
+		{{ form_widget(Form.siret,{'value':Infos.siret}) }}
+		{{ form_errors(Form.siret) }}
 	</div>
+
 
 	<button type="submit" class="link button large">Enregistrer les modifications</button>
 

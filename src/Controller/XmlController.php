@@ -6,33 +6,65 @@ use App\Repository\ActionRepository;
 use App\Repository\FormationRepository;
 use App\Repository\InfoGlobalRepository;
 use App\Repository\SessionRepository;
+use Doctrine\Migrations\Configuration\Migration\FormattedFile;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class XmlController extends AbstractController
 {
-    #[Route('/xml', name: 'app_xml')]
-    public function index(FormationRepository $formationRepository, ActionRepository $actionRepository, SessionRepository $sessionRepository, InfoGlobalRepository $infoGlobalRepository): Response
-    {
-        $Formations = $formationRepository->findAll();
-        $IngoGlobal = $infoGlobalRepository->find(1);
+  #[Route('/xml', name: 'app_xml')]
+  public function index(FormationRepository $formationRepository, ActionRepository $actionRepository, SessionRepository $sessionRepository, InfoGlobalRepository $infoGlobalRepository): Response
+  {
+    $Formations = $formationRepository->findAll();
+    $IngoGlobal = $infoGlobalRepository->find(1);
+    $FormationsFails = [];
+    $ActionsFails = [];
 
-        $xmlfileName = '87818694900011_godiveau_wordpress_obligatoire';
-        $xml_dec = "<?xml version='1.0' encoding='ISO-8859-1'?>";
-        $rootELementStart = "<lheo xmlns='https://www.of.moncompteformation.gouv.fr'><offres>";
-        $rootElementEnd = "</offres></lheo>";
-        $xml_doc = $xml_dec;
-        $xml_doc .= $rootELementStart;
-        /*         dd($IngoGlobal->getInfos());
- */
-        foreach ($Formations as $key => $Formation) {
-            $Actions = $actionRepository->findBy(
-                ['formation' => $Formation->getId()],
-            );
+    //Vérifie que chaque Formations possèdent au moins 1 Action.
+    foreach ($Formations as $key => $Formation) {
+      $Actions = $actionRepository->findBy(
+        ['formation' => $Formation->getId()],
+      );
+      if ($Actions == null) {
+        array_push($FormationsFails, $Formation);
+      }
 
-            $xml_doc .= "<formation numero='" . $Formation->getNumero() . "' datemaj='" . $Formation->getDatemaj()->format('Ymd') . "' datecrea='" . $Formation->getDatecrea()->format('Ymd') . "'>
-      <intitule-formation><![CDATA[" . $Formation->getIntituleFormation() . "]]></intitule-formation>
+      //Vérifie que chaque Actions possèdent au moins 1 Session.
+      foreach ($Actions as $key => $Action) {
+        $Sessions = $sessionRepository->findBy(
+          ['Action' => $Action->getId()],
+        );
+        if ($Sessions == null) {
+          array_push($ActionsFails, $Action);
+        }
+      }
+    }
+
+    if ($FormationsFails != null || $ActionsFails != null) {
+      return $this->render('xml/xml-fail.html.twig', [
+        'controller_name' => 'Erreur lors de la génération du XML',
+        'headerType' => 'XML',
+        'FormationsFails' => $FormationsFails,
+        'ActionsFails' => $ActionsFails,
+      ]);
+    } else {
+
+      //Création du fichier XMl
+      $xmlfileName = '87818694900029_godiveau_wordpress_obligatoire';
+      $xml_dec = "<?xml version='1.0' encoding='ISO-8859-1'?>";
+      $rootELementStart = "<lheo xmlns='https://www.of.moncompteformation.gouv.fr'><offres>";
+      $rootElementEnd = "</offres></lheo>";
+      $xml_doc = $xml_dec;
+      $xml_doc .= $rootELementStart;
+
+      foreach ($Formations as $key => $Formation) {
+        $Actions = $actionRepository->findBy(
+          ['formation' => $Formation->getId()],
+        );
+
+        $xml_doc .= "<formation numero='" . $Formation->getNumero() . "' datemaj='" . $Formation->getDatemaj()->format('Ymd') . "' datecrea='" . $Formation->getDatecrea()->format('Ymd') . "'>
+      <intitule-formation>" . $Formation->getIntituleFormation() . "</intitule-formation>
       <objectif-formation><![CDATA[" . $Formation->getObjectifFormation() . "]]></objectif-formation>
       <resultats-attendus><![CDATA[" . $Formation->getResultatsAttendus() . "]]></resultats-attendus>
       <contenu-formation><![CDATA[" . $Formation->getContenuFormation() . "]]></contenu-formation>
@@ -43,12 +75,12 @@ class XmlController extends AbstractController
       </certification>
       ";
 
-            foreach ($Actions as $key => $Action) {
-                $Sessions = $sessionRepository->findBy(
-                    ['action' => $Action->getId()],
-                );
+        foreach ($Actions as $key => $Action) {
+          $Sessions = $sessionRepository->findBy(
+            ['Action' => $Action->getId()],
+          );
 
-                $xml_doc .= "
+          $xml_doc .= "
       <action numero='" . $Action->getNumero() . "' datemaj='" . $Action->getDatemaj()->format('Ymd') . "' datecrea='" . $Action->getDatecrea()->format('Ymd') . "'>
         <niveau-entree-obligatoire>" . $Action->getNiveauEntreeObligatoire() . "</niveau-entree-obligatoire>
         <modalites-enseignement>" . $Action->getModalitesEnseignement() . "</modalites-enseignement>
@@ -76,8 +108,8 @@ class XmlController extends AbstractController
         </lieu-de-formation>
         <modalites-entrees-sorties>" . $Action->getModalitesEntreesSorties() . "</modalites-entrees-sorties>";
 
-                foreach ($Sessions as $key => $Session) {
-                    $xml_doc .= "
+          foreach ($Sessions as $key => $Session) {
+            $xml_doc .= "
                     <session numero='" . $Session->getNumero() . "' datemaj='" . $Session->getDatemaj()->format('Ymd') . "' datecrea='" . $Session->getDatecrea()->format('Ymd') . "'>
                     <adresse-inscription>
                        <adresse numero='" . $IngoGlobal->getInfos()['numero'] . "'>
@@ -109,9 +141,9 @@ class XmlController extends AbstractController
                     </extras>
                     </session>
                     ";
-                }
+          }
 
-                $xml_doc .= "
+          $xml_doc .= "
         <adresse-information>
           <adresse numero='" . $IngoGlobal->getInfos()['numero'] . "'>
             <ligne>" . $IngoGlobal->getInfos()['nomOrganisme'] . "</ligne>
@@ -124,10 +156,19 @@ class XmlController extends AbstractController
               <extra info='conformite-reglementaire'>1</extra>
             </extras>
           </adresse>
-        </adresse-information>
-        <restauration>" . $Action->getRestauration() . "</restauration>
-        <hebergement>" . $Action->getHebergement() . "</hebergement>
-        <transport>" . $Action->getTransport() . "</transport>
+        </adresse-information>";
+
+          if ($Action->getRestauration() != null) {
+            $xml_doc .= "<restauration>" . $Action->getRestauration() . "</restauration>";
+          }
+          if ($Action->getHebergement() != null) {
+            $xml_doc .= "<hebergement>" . $Action->getHebergement() . "</hebergement>";
+          }
+          if ($Action->getTransport() != null) {
+            $xml_doc .= "<transport>" . $Action->getTransport() . "</transport>";
+          }
+
+          $xml_doc .= "
         <acces-handicapes><![CDATA[" . $IngoGlobal->getAccesHandicapes() . "]]></acces-handicapes>
         <langue-formation>" . $Action->getLangueFormation() . "</langue-formation>
         <modalites-pedagogiques><![CDATA[" . $Action->getModalitesPedagogiques() . "]]></modalites-pedagogiques>
@@ -146,20 +187,22 @@ class XmlController extends AbstractController
           <extra info='info-admission'><![CDATA[" . $Action->getExtras()['infoAdmission'] . "]]></extra>
           <extras info='codes-modalites-admission'>";
 
-                foreach ($Action->getExtras()['codeModalitesAdmission'] as $key => $value) {
-                    $xml_doc .= "<extra info='code-modalites-admission'>" . $value . "</extra>";
-                }
+          foreach ($Action->getExtras()['codeModalitesAdmission'] as $key => $value) {
+            $xml_doc .= "<extra info='code-modalites-admission'>" . $value . "</extra>";
+          }
 
-                $xml_doc .= "
+          $xml_doc .= "
           </extras>
-          <extra info='duree-apprentissage'></extra>
           <extras info='codes-rythme-formation'>
             ";
-                foreach ($Action->getExtras()['codeRythmeFormation'] as $key => $value) {
-                    $xml_doc .= "<extra info='code-rythme-formation'>" . $value . "</extra>";
-                }
 
-                $xml_doc .= "
+          /* <extra info='duree-apprentissage'></extra> */
+
+          foreach ($Action->getExtras()['codeRythmeFormation'] as $key => $value) {
+            $xml_doc .= "<extra info='code-rythme-formation'>" . $value . "</extra>";
+          }
+
+          $xml_doc .= "
           </extras>
           <extra info='code-type-horaires'>" . $Action->getExtras()['codeTypeHoraire'] . "</extra>
           <extra info='frais-certif-inclus-frais-anpec'>" . $Action->getExtras()['fraisCertifInclusFraisAnpec'] . "</extra>
@@ -173,9 +216,9 @@ class XmlController extends AbstractController
         </extras>
       </action>            
                 ";
-            }
+        }
 
-            $xml_doc .= "<organisme-formation-responsable>
+        $xml_doc .= "<organisme-formation-responsable>
         <SIRET-organisme-formation>
           <SIRET>" . $IngoGlobal->getSiret() . "</SIRET>
         </SIRET-organisme-formation>
@@ -185,20 +228,35 @@ class XmlController extends AbstractController
       </extras>
     </formation>
             ";
-        };
+      };
 
-        $xml_doc .= "";
+      $xml_doc .= "";
+      $xml_doc .= $rootElementEnd;
 
-        $xml_doc .= $rootElementEnd;
-        $default_dir = "";
-        $default_dir .= $xmlfileName . ".xml";
-        $fp = fopen($default_dir, 'w');
-        $write = fwrite($fp, $xml_doc);
+      /* 
+    é = &eacute
+	  ' = &#39
+	  î = &icirc
+	  à = &agrave
+	  è = &egrave 
+    */
 
-        return $this->render('xml/xml.html.twig', [
-            'controller_name' => 'Génération du XML',
-            'headerType' => 'XML',
-            'Formations' => $Formations
-        ]);
+      $xml_doc = str_replace('é', '&eacute', $xml_doc);
+      $xml_doc = str_replace("’", '&#39', $xml_doc);
+      $xml_doc = str_replace('î', '&icirc', $xml_doc);
+      $xml_doc = str_replace('à', '&agrave', $xml_doc);
+      $xml_doc = str_replace('è', '&egrave', $xml_doc);
+
+      $default_dir = "";
+      $default_dir .= $xmlfileName . ".xml";
+      $fp = fopen($default_dir, 'w');
+      $write = fwrite($fp, $xml_doc);
     }
+
+    return $this->render('xml/xml.html.twig', [
+      'controller_name' => 'Génération du XML',
+      'headerType' => 'XML',
+      'Formations' => $Formations
+    ]);
+  }
 }

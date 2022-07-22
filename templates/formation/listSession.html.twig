@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Session de l'action :
+	{{nameAction}}
+{% endblock %}
+
+{% block body %}
+	<div class="tbl-header">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<tr>
+					<th>Identifiant de la session</th>
+					<th>Mise à jour le</th>
+					<th>Crée le</th>
+					<th>Voir</th>
+					<th>Supprimer</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div class="tbl-content">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+				{% for session in Sessions %}
+					<tr id="formation{{session.id}}">
+						<td>{{session.numero}}</td>
+						<td>{{session.datemaj|date('d/m/Y')}}</td>
+						<td>{{session.datecrea|date('d/m/Y')}}</td>
+						<td>
+							<a href="{# {{ path('view-action', { 'idSession': session.id }) }} #}" class="link">
+								<i class="fa-solid fa-edit"></i>
+								Modifier
+							</a>
+						</td>
+						<td>
+							<a href="{{ path('del-session', { 'idSession': session.id }) }}" class="link">
+								<i class="fa-solid fa-trash"></i>
+								Supprimer
+							</a>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	{% endblock %}
