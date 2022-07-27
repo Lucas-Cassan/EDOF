@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\InfoGlobal;
 use App\Repository\ActionRepository;
 use App\Repository\FormationRepository;
 use App\Repository\InfoGlobalRepository;
@@ -256,7 +257,8 @@ class XmlController extends AbstractController
     return $this->render('xml/xml.html.twig', [
       'controller_name' => 'Génération du XML',
       'headerType' => 'XML',
-      'Formations' => $Formations
+      'Formations' => $Formations,
+      'SIRET' => $IngoGlobal->getSiret()
     ]);
   }
 }
