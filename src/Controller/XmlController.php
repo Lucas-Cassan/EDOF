@@ -255,8 +255,8 @@ class XmlController extends AbstractController
     }
 
     return $this->render('xml/xml.html.twig', [
-      'controller_name' => 'Génération du XML',
-      'headerType' => 'XML',
+      'controller_name' => 'Génération du XML réussis avec Succès ✅',
+      'headerType' => 'add',
       'Formations' => $Formations,
       'SIRET' => $IngoGlobal->getSiret()
     ]);

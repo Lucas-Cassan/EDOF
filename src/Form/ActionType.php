@@ -47,7 +47,7 @@ class ActionType extends AbstractType
                 'choices' => [
                     'Formation entièrement présentielle' => 0,
                     'Formation mixte' => 1,
-                    'Formation entièrement à distance' => 3,
+                    'Formation entièrement à distance' => 2,
                 ],
                 'placeholder' => 'Choisie une option',
                 'required' => true,
