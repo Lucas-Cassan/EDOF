@@ -52,9 +52,9 @@ class XmlController extends AbstractController
     } else {
 
       //Création du fichier XMl
-      $xmlfileName = '87818694900029_godiveau_wordpress_obligatoire';
-      $xml_dec = "<?xml version='1.0' encoding='ISO-8859-1'?>";
-      $rootELementStart = "<lheo xmlns='https://www.of.moncompteformation.gouv.fr'><offres>";
+      $xmlfileName = "87818694900029_godiveau_wordpress_obligatoire";
+      $xml_dec = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>";
+      $rootELementStart = "<lheo xmlns=\"https://www.of.moncompteformation.gouv.fr\"><offres>";
       $rootElementEnd = "</offres></lheo>";
       $xml_doc = $xml_dec;
       $xml_doc .= $rootELementStart;
@@ -64,7 +64,7 @@ class XmlController extends AbstractController
           ['formation' => $Formation->getId()],
         );
 
-        $xml_doc .= "<formation numero='" . $Formation->getNumero() . "' datemaj='" . $Formation->getDatemaj()->format('Ymd') . "' datecrea='" . $Formation->getDatecrea()->format('Ymd') . "'>
+        $xml_doc .= "<formation numero=\"" . $Formation->getNumero() . "\" datemaj=\"" . $Formation->getDatemaj()->format('Ymd') . "\" datecrea=\"" . $Formation->getDatecrea()->format('Ymd') . "\">
       <intitule-formation>" . $Formation->getIntituleFormation() . "</intitule-formation>
       <objectif-formation><![CDATA[" . $Formation->getObjectifFormation() . "]]></objectif-formation>
       <resultats-attendus><![CDATA[" . $Formation->getResultatsAttendus() . "]]></resultats-attendus>
@@ -82,23 +82,23 @@ class XmlController extends AbstractController
           );
 
           $xml_doc .= "
-      <action numero='" . $Action->getNumero() . "' datemaj='" . $Action->getDatemaj()->format('Ymd') . "' datecrea='" . $Action->getDatecrea()->format('Ymd') . "'>
+      <action numero=\"" . $Action->getNumero() . "\" datemaj=\"" . $Action->getDatemaj()->format('Ymd') . "\" datecrea=\"" . $Action->getDatecrea()->format('Ymd') . "\">
         <niveau-entree-obligatoire>" . $Action->getNiveauEntreeObligatoire() . "</niveau-entree-obligatoire>
         <modalites-enseignement>" . $Action->getModalitesEnseignement() . "</modalites-enseignement>
         <conditions-specifiques><![CDATA[" . $Action->getConditionsSpecifiques() . "]]></conditions-specifiques>
         <lieu-de-formation>
-          <coordonnees numero='" . $IngoGlobal->getInfos()['numero'] . "'>
+          <coordonnees numero=\"" . $IngoGlobal->getInfos()['numero'] . "\">
             <nom>" . $IngoGlobal->getInfos()['nom'] . "</nom>
             <prenom>" . $IngoGlobal->getInfos()['prenom'] . "</prenom>
-            <adresse numero='" . $IngoGlobal->getInfos()['numero'] . "'>
+            <adresse numero=\"" . $IngoGlobal->getInfos()['numero'] . "\">
               <ligne>" . $IngoGlobal->getInfos()['nomOrganisme'] . "</ligne>
               <codepostal>" . $IngoGlobal->getInfos()['cp'] . "</codepostal>
               <ville>" . $IngoGlobal->getInfos()['Ville'] . "</ville>
-              <extras info='adresse'>
-                <extra info='numero-voie'>" . $IngoGlobal->getInfos()['numeroVoie'] . "</extra>
-                <extra info='code-nature-voie'>" . $IngoGlobal->getInfos()['natureVoie'] . "</extra>
-                <extra info='libelle-voie'>" . $IngoGlobal->getInfos()['libelleVoie'] . "</extra>
-                <extra info='conformite-reglementaire'>1</extra>
+              <extras info=\"adresse\">
+                <extra info=\"numero-voie\">" . $IngoGlobal->getInfos()['numeroVoie'] . "</extra>
+                <extra info=\"code-nature-voie\">" . $IngoGlobal->getInfos()['natureVoie'] . "</extra>
+                <extra info=\"libelle-voie\">" . $IngoGlobal->getInfos()['libelleVoie'] . "</extra>
+                <extra info=\"conformite-reglementaire\">1</extra>
               </extras>
             </adresse>
             <telfixe>
@@ -111,24 +111,24 @@ class XmlController extends AbstractController
 
           foreach ($Sessions as $key => $Session) {
             $xml_doc .= "
-                    <session numero='" . $Session->getNumero() . "' datemaj='" . $Session->getDatemaj()->format('Ymd') . "' datecrea='" . $Session->getDatecrea()->format('Ymd') . "'>
+                    <session numero=\"" . $Session->getNumero() . "\" datemaj=\"" . $Session->getDatemaj()->format('Ymd') . "\" datecrea=\"" . $Session->getDatecrea()->format('Ymd') . "\">
                     <adresse-inscription>
-                       <adresse numero='" . $IngoGlobal->getInfos()['numero'] . "'>
+                       <adresse numero=\"" . $IngoGlobal->getInfos()['numero'] . "\">
                         <ligne>" . $IngoGlobal->getInfos()['nomOrganisme'] . "</ligne>
                         <codepostal>" . $IngoGlobal->getInfos()['cp'] . "</codepostal>
                         <ville>" . $IngoGlobal->getInfos()['Ville'] . "</ville>
-                        <extras info='adresse'>
-                            <extra info='numero-voie'>" . $IngoGlobal->getInfos()['numeroVoie'] . "</extra>
-                            <extra info='code-nature-voie'>" . $IngoGlobal->getInfos()['natureVoie'] . "</extra>
-                            <extra info='libelle-voie'>" . $IngoGlobal->getInfos()['libelleVoie'] . "</extra>
-                            <extra info='conformite-reglementaire'>1</extra>
+                        <extras info=\"adresse\">
+                            <extra info=\"numero-voie\">" . $IngoGlobal->getInfos()['numeroVoie'] . "</extra>
+                            <extra info=\"code-nature-voie\">" . $IngoGlobal->getInfos()['natureVoie'] . "</extra>
+                            <extra info=\"libelle-voie\">" . $IngoGlobal->getInfos()['libelleVoie'] . "</extra>
+                            <extra info=\"conformite-reglementaire\">1</extra>
                         </extras>
                         </adresse>
                     </adresse-inscription>
                     <etat-recrutement>" . $Session->getEtatRecrutement() . "</etat-recrutement>
-                    <extras info='session'>
-                        <extra info='contact-inscription'>
-                        <coordonnees numero='" . $IngoGlobal->getInfos()['numero'] . "'>
+                    <extras info=\"session\">
+                        <extra info=\"contact-inscription\">
+                        <coordonnees numero=\"" . $IngoGlobal->getInfos()['numero'] . "\">
                             <nom>" . $IngoGlobal->getInfos()['nom'] . "</nom>
                             <prenom>" . $IngoGlobal->getInfos()['prenom'] . "</prenom>
                             <telfixe>
@@ -137,8 +137,8 @@ class XmlController extends AbstractController
                             <courriel>" . $IngoGlobal->getInfos()['email'] . "</courriel>
                         </coordonnees>
                         </extra>
-                        <extra info='garantie'>" . $Session->getGarantie() . "</extra>
-                        <extra info='modalites-particulieres'><![CDATA[" . $Session->getExtras()['modalitesParticulieres'] . "]]></extra>
+                        <extra info=\"garantie\">" . $Session->getGarantie() . "</extra>
+                        <extra info=\"modalites-particulieres\"><![CDATA[" . $Session->getExtras()['modalitesParticulieres'] . "]]></extra>
                     </extras>
                     </session>
                     ";
@@ -146,15 +146,15 @@ class XmlController extends AbstractController
 
           $xml_doc .= "
         <adresse-information>
-          <adresse numero='" . $IngoGlobal->getInfos()['numero'] . "'>
+          <adresse numero=\"" . $IngoGlobal->getInfos()['numero'] . "\">
             <ligne>" . $IngoGlobal->getInfos()['nomOrganisme'] . "</ligne>
             <codepostal>" . $IngoGlobal->getInfos()['cp'] . "</codepostal>
             <ville>" . $IngoGlobal->getInfos()['Ville'] . "</ville>
-            <extras info='adresse'>
-               <extra info='numero-voie'>" . $IngoGlobal->getInfos()['numeroVoie'] . "</extra>
-                <extra info='code-nature-voie'>" . $IngoGlobal->getInfos()['natureVoie'] . "</extra>
-                <extra info='libelle-voie'>" . $IngoGlobal->getInfos()['libelleVoie'] . "</extra>
-              <extra info='conformite-reglementaire'>1</extra>
+            <extras info=\"adresse\">
+               <extra info=\"numero-voie\">" . $IngoGlobal->getInfos()['numeroVoie'] . "</extra>
+                <extra info=\"code-nature-voie\">" . $IngoGlobal->getInfos()['natureVoie'] . "</extra>
+                <extra info=\"libelle-voie\">" . $IngoGlobal->getInfos()['libelleVoie'] . "</extra>
+              <extra info=\"conformite-reglementaire\">1</extra>
             </extras>
           </adresse>
         </adresse-information>";
@@ -173,9 +173,9 @@ class XmlController extends AbstractController
         <acces-handicapes><![CDATA[" . $IngoGlobal->getAccesHandicapes() . "]]></acces-handicapes>
         <langue-formation>" . $Action->getLangueFormation() . "</langue-formation>
         <modalites-pedagogiques><![CDATA[" . $Action->getModalitesPedagogiques() . "]]></modalites-pedagogiques>
-        <extras info='action'>
-          <extra info='contact-information'>
-            <coordonnees numero='" . $IngoGlobal->getInfos()['numero'] . "'>
+        <extras info=\"action\">
+          <extra info=\"contact-information\">
+            <coordonnees numero=\"" . $IngoGlobal->getInfos()['numero'] . "\">
               <nom>" . $IngoGlobal->getInfos()['nom'] . "</nom>
             <prenom>" . $IngoGlobal->getInfos()['prenom'] . "</prenom>
               <telfixe>
@@ -184,36 +184,36 @@ class XmlController extends AbstractController
               <courriel>" . $IngoGlobal->getInfos()['email'] . "</courriel>
             </coordonnees>
           </extra>
-          <extra info='modalites-handicap'><![CDATA[" . $Action->getExtras()['modalitesHandicap'] . "]]></extra>
-          <extra info='info-admission'><![CDATA[" . $Action->getExtras()['infoAdmission'] . "]]></extra>
-          <extras info='codes-modalites-admission'>";
+          <extra info=\"modalites-handicap\"><![CDATA[" . $Action->getExtras()['modalitesHandicap'] . "]]></extra>
+          <extra info=\"info-admission\"><![CDATA[" . $Action->getExtras()['infoAdmission'] . "]]></extra>
+          <extras info=\"codes-modalites-admission\">";
 
           foreach ($Action->getExtras()['codeModalitesAdmission'] as $key => $value) {
-            $xml_doc .= "<extra info='code-modalites-admission'>" . $value . "</extra>";
+            $xml_doc .= "<extra info=\"code-modalites-admission\">" . $value . "</extra>";
           }
 
           $xml_doc .= "
           </extras>
-          <extras info='codes-rythme-formation'>
+          <extras info=\"codes-rythme-formation\">
             ";
 
-          /* <extra info='duree-apprentissage'></extra> */
+          /* <extra info=\"duree-apprentissage\"></extra> */
 
           foreach ($Action->getExtras()['codeRythmeFormation'] as $key => $value) {
-            $xml_doc .= "<extra info='code-rythme-formation'>" . $value . "</extra>";
+            $xml_doc .= "<extra info=\"code-rythme-formation\">" . $value . "</extra>";
           }
 
           $xml_doc .= "
           </extras>
-          <extra info='code-type-horaires'>" . $Action->getExtras()['codeTypeHoraire'] . "</extra>
-          <extra info='frais-certif-inclus-frais-anpec'>" . $Action->getExtras()['fraisCertifInclusFraisAnpec'] . "</extra>
-          <extra info='code-modele-economique'>" . $Action->getExtras()['codeModeleEconomique'] . "</extra>
-          <extras info='frais-pedagogiques'>
-            <extra info='taux-tva'>" . $Action->getExtras()['tauxTva'] . "</extra>
-            <extra info='frais-ht'>" . $Action->getExtras()['fraisHt'] . "</extra>
-            <extra info='frais-ttc'>" . $Action->getExtras()['fraisTtc'] . "</extra>
+          <extra info=\"code-type-horaires\">" . $Action->getExtras()['codeTypeHoraire'] . "</extra>
+          <extra info=\"frais-certif-inclus-frais-anpec\">" . $Action->getExtras()['fraisCertifInclusFraisAnpec'] . "</extra>
+          <extra info=\"code-modele-economique\">" . $Action->getExtras()['codeModeleEconomique'] . "</extra>
+          <extras info=\"frais-pedagogiques\">
+            <extra info=\"taux-tva\">" . $Action->getExtras()['tauxTva'] . "</extra>
+            <extra info=\"frais-ht\">" . $Action->getExtras()['fraisHt'] . "</extra>
+            <extra info=\"frais-ttc\">" . $Action->getExtras()['fraisTtc'] . "</extra>
           </extras>
-          <extra info='existence-prerequis'>" . $Action->getExtras()['existencePrerequis'] . "</extra>
+          <extra info=\"existence-prerequis\">" . $Action->getExtras()['existencePrerequis'] . "</extra>
         </extras>
       </action>            
                 ";
@@ -224,8 +224,8 @@ class XmlController extends AbstractController
           <SIRET>" . $IngoGlobal->getSiret() . "</SIRET>
         </SIRET-organisme-formation>
       </organisme-formation-responsable>
-      <extras info='formation'>
-        <extra info='resume-contenu'><![CDATA[" . $Formation->getExtraResumeContenu() . "]]></extra>
+      <extras info=\"formation\">
+        <extra info=\"resume-contenu\"><![CDATA[" . $Formation->getExtraResumeContenu() . "]]></extra>
       </extras>
     </formation>
             ";
@@ -244,6 +244,7 @@ class XmlController extends AbstractController
 
       $xml_doc = str_replace('é', '&eacute', $xml_doc);
       $xml_doc = str_replace("’", '&#39', $xml_doc);
+      $xml_doc = str_replace("'", '&#39', $xml_doc);
       $xml_doc = str_replace('î', '&icirc', $xml_doc);
       $xml_doc = str_replace('à', '&agrave', $xml_doc);
       $xml_doc = str_replace('è', '&egrave', $xml_doc);

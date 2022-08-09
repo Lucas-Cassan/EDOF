@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='ISO-8859-1'?><lheo xmlns='https://www.of.moncompteformation.gouv.fr'><offres><formation numero='WORDPRESS' datemaj='20220721' datecrea='20220721'>
+<?xml version="1.0" encoding="ISO-8859-1"?><lheo xmlns="https://www.of.moncompteformation.gouv.fr"><offres><formation numero="WORDPRESS" datemaj="20220721" datecrea="20220721">
       <intitule-formation>Creation site wordpress</intitule-formation>
       <objectif-formation><![CDATA[<h5 class="panel-body-section-icon">
 					<span class="material-icons">task_alt</span>
-					A l'issue de cette formation vous saurez :
+					A l&#39issue de cette formation vous saurez :
 				</h5>
 
 				<ul>
@@ -24,14 +24,14 @@
 					&agrave la fin de la formation, le stagiaire passe la certification  "Edition site Web Wordpress" </p>
 					<p class="panel-body-section-icon">
 					<span class="material-icons">library_books</span>
-					La certification se pr&eacutesente sous la forme d'un questionnaire de 36 questions auxquelles vous devez r&eacutepondre en 35 minutes.</p>]]></resultats-attendus>
+					La certification se pr&eacutesente sous la forme d&#39un questionnaire de 36 questions auxquelles vous devez r&eacutepondre en 35 minutes.</p>]]></resultats-attendus>
       <contenu-formation><![CDATA[<h5 class="panel-body-section-icon">
 					<span class="material-icons">language</span>Notre formation :</h5>
 				<ul>
 					<li>Comprendre les concepts et termes cl&eacutes du web</li>
 					<li>Conna&icirctre les principes de base du HTML</li>
-					<li>Reconna&icirctre et utiliser les formats d'image web courants</li>
-					<li>D&eacutefinir ce qu'est un CMS</li>
+					<li>Reconna&icirctre et utiliser les formats d&#39image web courants</li>
+					<li>D&eacutefinir ce qu&#39est un CMS</li>
 				</ul>
 				<h5 class="panel-body-section-icon">
 					<span class="material-icons">wordpress</span>WordPress :</h5>
@@ -61,23 +61,23 @@
         <code-CERTIFINFO>112560</code-CERTIFINFO>
       </certification>
       
-      <action numero='WORDPRESS-ACTION-1' datemaj='20220721' datecrea='20220721'>
+      <action numero="WORDPRESS-ACTION-1" datemaj="20220721" datecrea="20220721">
         <niveau-entree-obligatoire>0</niveau-entree-obligatoire>
         <modalites-enseignement>1</modalites-enseignement>
         <conditions-specifiques><![CDATA[Savoirs et savoir-faire pr&eacuterequis.]]></conditions-specifiques>
         <lieu-de-formation>
-          <coordonnees numero='Organisme de formation'>
+          <coordonnees numero="Organisme de formation">
             <nom>GOdiveau</nom>
             <prenom>William</prenom>
-            <adresse numero='Organisme de formation'>
+            <adresse numero="Organisme de formation">
               <ligne>Absys Formation</ligne>
               <codepostal>34000</codepostal>
               <ville>Montpellier</ville>
-              <extras info='adresse'>
-                <extra info='numero-voie'>48</extra>
-                <extra info='code-nature-voie'>RUE</extra>
-                <extra info='libelle-voie'>Claude Balbastre</extra>
-                <extra info='conformite-reglementaire'>1</extra>
+              <extras info="adresse">
+                <extra info="numero-voie">48</extra>
+                <extra info="code-nature-voie">RUE</extra>
+                <extra info="libelle-voie">Claude Balbastre</extra>
+                <extra info="conformite-reglementaire">1</extra>
               </extras>
             </adresse>
             <telfixe>
@@ -87,24 +87,24 @@
           </coordonnees>
         </lieu-de-formation>
         <modalites-entrees-sorties>1</modalites-entrees-sorties>
-                    <session numero='WORDPRESS-SESSION-1' datemaj='20220721' datecrea='20220721'>
+                    <session numero="WORDPRESS-SESSION-1" datemaj="20220721" datecrea="20220721">
                     <adresse-inscription>
-                       <adresse numero='Organisme de formation'>
+                       <adresse numero="Organisme de formation">
                         <ligne>Absys Formation</ligne>
                         <codepostal>34000</codepostal>
                         <ville>Montpellier</ville>
-                        <extras info='adresse'>
-                            <extra info='numero-voie'>48</extra>
-                            <extra info='code-nature-voie'>RUE</extra>
-                            <extra info='libelle-voie'>Claude Balbastre</extra>
-                            <extra info='conformite-reglementaire'>1</extra>
+                        <extras info="adresse">
+                            <extra info="numero-voie">48</extra>
+                            <extra info="code-nature-voie">RUE</extra>
+                            <extra info="libelle-voie">Claude Balbastre</extra>
+                            <extra info="conformite-reglementaire">1</extra>
                         </extras>
                         </adresse>
                     </adresse-inscription>
                     <etat-recrutement>1</etat-recrutement>
-                    <extras info='session'>
-                        <extra info='contact-inscription'>
-                        <coordonnees numero='Organisme de formation'>
+                    <extras info="session">
+                        <extra info="contact-inscription">
+                        <coordonnees numero="Organisme de formation">
                             <nom>GOdiveau</nom>
                             <prenom>William</prenom>
                             <telfixe>
@@ -113,21 +113,21 @@
                             <courriel>contact@absys-formation.fr</courriel>
                         </coordonnees>
                         </extra>
-                        <extra info='garantie'>1</extra>
-                        <extra info='modalites-particulieres'><![CDATA[]]></extra>
+                        <extra info="garantie">1</extra>
+                        <extra info="modalites-particulieres"><![CDATA[]]></extra>
                     </extras>
                     </session>
                     
         <adresse-information>
-          <adresse numero='Organisme de formation'>
+          <adresse numero="Organisme de formation">
             <ligne>Absys Formation</ligne>
             <codepostal>34000</codepostal>
             <ville>Montpellier</ville>
-            <extras info='adresse'>
-               <extra info='numero-voie'>48</extra>
-                <extra info='code-nature-voie'>RUE</extra>
-                <extra info='libelle-voie'>Claude Balbastre</extra>
-              <extra info='conformite-reglementaire'>1</extra>
+            <extras info="adresse">
+               <extra info="numero-voie">48</extra>
+                <extra info="code-nature-voie">RUE</extra>
+                <extra info="libelle-voie">Claude Balbastre</extra>
+              <extra info="conformite-reglementaire">1</extra>
             </extras>
           </adresse>
         </adresse-information>
@@ -139,9 +139,9 @@
 						<li>Assistance p&eacutedagogique par t&eacutel&eacutephone et e-mail</li>
 						<li>Plateforme de discussion </li>
 					</ul>]]></modalites-pedagogiques>
-        <extras info='action'>
-          <extra info='contact-information'>
-            <coordonnees numero='Organisme de formation'>
+        <extras info="action">
+          <extra info="contact-information">
+            <coordonnees numero="Organisme de formation">
               <nom>GOdiveau</nom>
             <prenom>William</prenom>
               <telfixe>
@@ -150,24 +150,24 @@
               <courriel>contact@absys-formation.fr</courriel>
             </coordonnees>
           </extra>
-          <extra info='modalites-handicap'><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p>
-								<i>Plus d'informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a>
+          <extra info="modalites-handicap"><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p>
+								<i>Plus d&#39informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a>
 								</i>]]></extra>
-          <extra info='info-admission'><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">call</span>Entretien t&eacutel&eacutephonique :</h5><ul><li>Questionnaire sur les motivations et attentes.</li><li>V&eacuterification de la pertinence de la formation choisie.</li><ul>]]></extra>
-          <extras info='codes-modalites-admission'><extra info='code-modalites-admission'>99999</extra>
+          <extra info="info-admission"><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">call</span>Entretien t&eacutel&eacutephonique :</h5><ul><li>Questionnaire sur les motivations et attentes.</li><li>V&eacuterification de la pertinence de la formation choisie.</li><ul>]]></extra>
+          <extras info="codes-modalites-admission"><extra info="code-modalites-admission">99999</extra>
           </extras>
-          <extras info='codes-rythme-formation'>
-            <extra info='code-rythme-formation'>7</extra>
+          <extras info="codes-rythme-formation">
+            <extra info="code-rythme-formation">7</extra>
           </extras>
-          <extra info='code-type-horaires'>1</extra>
-          <extra info='frais-certif-inclus-frais-anpec'>0</extra>
-          <extra info='code-modele-economique'>2</extra>
-          <extras info='frais-pedagogiques'>
-            <extra info='taux-tva'>0.0</extra>
-            <extra info='frais-ht'>1350</extra>
-            <extra info='frais-ttc'>1350</extra>
+          <extra info="code-type-horaires">1</extra>
+          <extra info="frais-certif-inclus-frais-anpec">0</extra>
+          <extra info="code-modele-economique">2</extra>
+          <extras info="frais-pedagogiques">
+            <extra info="taux-tva">0.0</extra>
+            <extra info="frais-ht">1350</extra>
+            <extra info="frais-ttc">1350</extra>
           </extras>
-          <extra info='existence-prerequis'>0</extra>
+          <extra info="existence-prerequis">0</extra>
         </extras>
       </action>            
                 <organisme-formation-responsable>
@@ -175,16 +175,16 @@
           <SIRET>87818694900029</SIRET>
         </SIRET-organisme-formation>
       </organisme-formation-responsable>
-      <extras info='formation'>
-        <extra info='resume-contenu'><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">done_all</span> Formateur expert
+      <extras info="formation">
+        <extra info="resume-contenu"><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">done_all</span> Formateur expert
 </p><p class="panel-body-section-icon"><span class="material-icons">verified</span>Formation certifiante</p>]]></extra>
       </extras>
     </formation>
-            <formation numero='VOLTAIRE' datemaj='20220721' datecrea='20220721'>
+            <formation numero="VOLTAIRE" datemaj="20220721" datecrea="20220721">
       <intitule-formation>Projet Voltaire - Orthographe - E-learing + Visio</intitule-formation>
       <objectif-formation><![CDATA[<h5 class="panel-body-section-icon">
 				<span class="material-icons">task_alt</span>
-				A l'issue de cette formation vous saurez :
+				A l&#39issue de cette formation vous saurez :
 				</h5>
 
 				<ul>
@@ -200,7 +200,7 @@
 				</div>]]></objectif-formation>
       <resultats-attendus><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">
 				verified</span>
-				&agrave la fin de la formation, le stagiaire passe la certification  "Certificat Voltaire" en centre d'examen
+				&agrave la fin de la formation, le stagiaire passe la certification  "Certificat Voltaire" en centre d&#39examen
 				</p>]]></resultats-attendus>
       <contenu-formation><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">language</span>Notre formation:</h5>
 				<p> La formation se compose de plusieurs modules. En fonction de votre test d&#39&eacutevaluation de d&eacutepart, votre parcours commencera par «Fondamentaux Campus + Pro + Pont Sup » ou « Sup&eacuterieur ». Vous terminerez par les modules communs «Orthographie » et « Excellence ».<p>
@@ -224,9 +224,9 @@
 				</ul>
 
 				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> « Sup&eacuterieur » ( Module accessible en fonction de votre Test de d&eacutepart)  :</h5>
-				<p> Travail approfondi sur 140 r&egravegles non ma'tris&eacutees, rassembl&eacutees sur 10 niveaux class&eacutes dans un
+				<p> Travail approfondi sur 140 r&egravegles non ma&#39tris&eacutees, rassembl&eacutees sur 10 niveaux class&eacutes dans un
 				ordre croissant de difficult&eacute (14 r&egravegles par niveau) > temps estim&eacute : 8 heures.</p>
-				<p> R&eacutevision des 10 niveaux (reprise des 140 r&egravegles) avec remise &agrave niveau sur les derniers points non ma'tris&eacutes
+				<p> R&eacutevision des 10 niveaux (reprise des 140 r&egravegles) avec remise &agrave niveau sur les derniers points non ma&#39tris&eacutes
 				temps estim&eacute : 2 heures. </p>
 				<em>Temps pass&eacute : le temps r&eacuteel pass&eacute sur chacune des 140 r&egravegles d&eacutependra du niveau du stagiaire, &eacutevalu&eacute
 				au d&eacutebut de chaque niveau.</em>
@@ -241,8 +241,8 @@
 				r&egravegles les plus couramment utilis&eacutees dans nos &eacutecrits..</p>
 
 				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> Excellence  :</h5>
-				<p> Travail approfondi sur 200 r&egravegles non ma'tris&eacutees et rassembl&eacutees sur 14 niveaux class&eacutes dans un ordre croissant de difficult&eacute > temps estim&eacute : 10 heures.</p>
-				<p> ->R&eacutevision des 14 niveaux (reprise des 200 r&egravegles) avec remise &agrave niveau sur les derniers points non ma'tris&eacutes
+				<p> Travail approfondi sur 200 r&egravegles non ma&#39tris&eacutees et rassembl&eacutees sur 14 niveaux class&eacutes dans un ordre croissant de difficult&eacute > temps estim&eacute : 10 heures.</p>
+				<p> ->R&eacutevision des 14 niveaux (reprise des 200 r&egravegles) avec remise &agrave niveau sur les derniers points non ma&#39tris&eacutes
  				temps estim&eacute : 2 heures.</p>
 				<em> Temps pass&eacute : le temps r&eacuteel pass&eacute sur chacune des 200 r&egravegles d&eacutependra du niveau du stagiaire, &eacutevalu&eacute
 				au d&eacutebut de chaque niveau.</em>]]></contenu-formation>
@@ -252,23 +252,23 @@
         <code-CERTIFINFO>84714</code-CERTIFINFO>
       </certification>
       
-      <action numero='VOLTAIRE-ACTION-1' datemaj='20220721' datecrea='20220721'>
+      <action numero="VOLTAIRE-ACTION-1" datemaj="20220721" datecrea="20220721">
         <niveau-entree-obligatoire>0</niveau-entree-obligatoire>
         <modalites-enseignement>1</modalites-enseignement>
         <conditions-specifiques><![CDATA[Savoirs et savoir-faire pr&eacuterequis.]]></conditions-specifiques>
         <lieu-de-formation>
-          <coordonnees numero='Organisme de formation'>
+          <coordonnees numero="Organisme de formation">
             <nom>GOdiveau</nom>
             <prenom>William</prenom>
-            <adresse numero='Organisme de formation'>
+            <adresse numero="Organisme de formation">
               <ligne>Absys Formation</ligne>
               <codepostal>34000</codepostal>
               <ville>Montpellier</ville>
-              <extras info='adresse'>
-                <extra info='numero-voie'>48</extra>
-                <extra info='code-nature-voie'>RUE</extra>
-                <extra info='libelle-voie'>Claude Balbastre</extra>
-                <extra info='conformite-reglementaire'>1</extra>
+              <extras info="adresse">
+                <extra info="numero-voie">48</extra>
+                <extra info="code-nature-voie">RUE</extra>
+                <extra info="libelle-voie">Claude Balbastre</extra>
+                <extra info="conformite-reglementaire">1</extra>
               </extras>
             </adresse>
             <telfixe>
@@ -278,24 +278,24 @@
           </coordonnees>
         </lieu-de-formation>
         <modalites-entrees-sorties>1</modalites-entrees-sorties>
-                    <session numero='VOLTAIRE-SESSION-1' datemaj='20220721' datecrea='20220721'>
+                    <session numero="VOLTAIRE-SESSION-1" datemaj="20220721" datecrea="20220721">
                     <adresse-inscription>
-                       <adresse numero='Organisme de formation'>
+                       <adresse numero="Organisme de formation">
                         <ligne>Absys Formation</ligne>
                         <codepostal>34000</codepostal>
                         <ville>Montpellier</ville>
-                        <extras info='adresse'>
-                            <extra info='numero-voie'>48</extra>
-                            <extra info='code-nature-voie'>RUE</extra>
-                            <extra info='libelle-voie'>Claude Balbastre</extra>
-                            <extra info='conformite-reglementaire'>1</extra>
+                        <extras info="adresse">
+                            <extra info="numero-voie">48</extra>
+                            <extra info="code-nature-voie">RUE</extra>
+                            <extra info="libelle-voie">Claude Balbastre</extra>
+                            <extra info="conformite-reglementaire">1</extra>
                         </extras>
                         </adresse>
                     </adresse-inscription>
                     <etat-recrutement>1</etat-recrutement>
-                    <extras info='session'>
-                        <extra info='contact-inscription'>
-                        <coordonnees numero='Organisme de formation'>
+                    <extras info="session">
+                        <extra info="contact-inscription">
+                        <coordonnees numero="Organisme de formation">
                             <nom>GOdiveau</nom>
                             <prenom>William</prenom>
                             <telfixe>
@@ -304,21 +304,21 @@
                             <courriel>contact@absys-formation.fr</courriel>
                         </coordonnees>
                         </extra>
-                        <extra info='garantie'>1</extra>
-                        <extra info='modalites-particulieres'><![CDATA[]]></extra>
+                        <extra info="garantie">1</extra>
+                        <extra info="modalites-particulieres"><![CDATA[]]></extra>
                     </extras>
                     </session>
                     
         <adresse-information>
-          <adresse numero='Organisme de formation'>
+          <adresse numero="Organisme de formation">
             <ligne>Absys Formation</ligne>
             <codepostal>34000</codepostal>
             <ville>Montpellier</ville>
-            <extras info='adresse'>
-               <extra info='numero-voie'>48</extra>
-                <extra info='code-nature-voie'>RUE</extra>
-                <extra info='libelle-voie'>Claude Balbastre</extra>
-              <extra info='conformite-reglementaire'>1</extra>
+            <extras info="adresse">
+               <extra info="numero-voie">48</extra>
+                <extra info="code-nature-voie">RUE</extra>
+                <extra info="libelle-voie">Claude Balbastre</extra>
+              <extra info="conformite-reglementaire">1</extra>
             </extras>
           </adresse>
         </adresse-information>
@@ -330,9 +330,9 @@
 						<li>Assistance p&eacutedagogique par t&eacutel&eacutephone et e-mail</li>
 						<li>Plateforme de discussion </li>
 					</ul>]]></modalites-pedagogiques>
-        <extras info='action'>
-          <extra info='contact-information'>
-            <coordonnees numero='Organisme de formation'>
+        <extras info="action">
+          <extra info="contact-information">
+            <coordonnees numero="Organisme de formation">
               <nom>GOdiveau</nom>
             <prenom>William</prenom>
               <telfixe>
@@ -341,22 +341,22 @@
               <courriel>contact@absys-formation.fr</courriel>
             </coordonnees>
           </extra>
-          <extra info='modalites-handicap'><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p><i>Plus d'informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a></i>]]></extra>
-          <extra info='info-admission'><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">call</span>Entretien t&eacutel&eacutephonique :</h5><ul><li>Questionnaire sur les motivations et attentes.</li><li>V&eacuterification de la pertinence de la formation choisie.</li><ul>]]></extra>
-          <extras info='codes-modalites-admission'><extra info='code-modalites-admission'>99999</extra>
+          <extra info="modalites-handicap"><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p><i>Plus d&#39informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a></i>]]></extra>
+          <extra info="info-admission"><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">call</span>Entretien t&eacutel&eacutephonique :</h5><ul><li>Questionnaire sur les motivations et attentes.</li><li>V&eacuterification de la pertinence de la formation choisie.</li><ul>]]></extra>
+          <extras info="codes-modalites-admission"><extra info="code-modalites-admission">99999</extra>
           </extras>
-          <extras info='codes-rythme-formation'>
-            <extra info='code-rythme-formation'>7</extra>
+          <extras info="codes-rythme-formation">
+            <extra info="code-rythme-formation">7</extra>
           </extras>
-          <extra info='code-type-horaires'>1</extra>
-          <extra info='frais-certif-inclus-frais-anpec'>0</extra>
-          <extra info='code-modele-economique'>2</extra>
-          <extras info='frais-pedagogiques'>
-            <extra info='taux-tva'>0.0</extra>
-            <extra info='frais-ht'>1190</extra>
-            <extra info='frais-ttc'>1190</extra>
+          <extra info="code-type-horaires">1</extra>
+          <extra info="frais-certif-inclus-frais-anpec">0</extra>
+          <extra info="code-modele-economique">2</extra>
+          <extras info="frais-pedagogiques">
+            <extra info="taux-tva">0.0</extra>
+            <extra info="frais-ht">1190</extra>
+            <extra info="frais-ttc">1190</extra>
           </extras>
-          <extra info='existence-prerequis'>0</extra>
+          <extra info="existence-prerequis">0</extra>
         </extras>
       </action>            
                 <organisme-formation-responsable>
@@ -364,8 +364,8 @@
           <SIRET>87818694900029</SIRET>
         </SIRET-organisme-formation>
       </organisme-formation-responsable>
-      <extras info='formation'>
-        <extra info='resume-contenu'><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">done_all</span> Formateur expert
+      <extras info="formation">
+        <extra info="resume-contenu"><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">done_all</span> Formateur expert
 				</p><p class="panel-body-section-icon"><span class="material-icons">verified</span>Formation certifiante</p>]]></extra>
       </extras>
     </formation>
