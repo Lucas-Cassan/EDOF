@@ -253,9 +253,7 @@ class XmlController extends AbstractController
       $xml_doc = str_replace('ê', '&ecirc', $xml_doc);
       $xml_doc = str_replace('ù', '&ugrave', $xml_doc);
 
-      $xml_doc = str_replace("’", '&#39', $xml_doc);
-      $xml_doc = str_replace("'", '&#39', $xml_doc);
-
+      $xml_doc = str_replace("’", "'", $xml_doc);
 
       $default_dir = "";
       $default_dir .= $xmlfileName . ".xml";
