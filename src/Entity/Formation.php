@@ -33,7 +33,7 @@ class Formation
     #[ORM\Column(type: 'integer')]
     private $objectifGeneralFormation;
 
-    #[ORM\Column(type: 'integer')]
+    #[ORM\Column(type: 'string')]
     private $certifInfo;
 
     #[ORM\Column(type: 'string', length: 255)]
@@ -130,12 +130,12 @@ class Formation
         return $this;
     }
 
-    public function getCertifInfo(): ?int
+    public function getCertifInfo(): ?string
     {
         return $this->certifInfo;
     }
 
-    public function setCertifInfo(int $certifInfo): self
+    public function setCertifInfo(string $certifInfo): self
     {
         $this->certifInfo = $certifInfo;
         return $this;

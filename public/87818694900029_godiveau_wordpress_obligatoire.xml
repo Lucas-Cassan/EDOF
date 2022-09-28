@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><lheo xmlns="https://www.of.moncompteformation.gouv.fr"><offres><formation numero="WORDPRESS" datemaj="20220721" datecrea="20220721">
+<?xml version="1.0" encoding="ISO-8859-1"?><lheo xmlns="https://www.of.moncompteformation.gouv.fr"><offres><formation numero="WORDPRESS" datemaj="20220928" datecrea="20220721">
       <intitule-formation>Creation site wordpress</intitule-formation>
       <objectif-formation><![CDATA[<h5 class="panel-body-section-icon">
 					<span class="material-icons">task_alt</span>
-					A l&#39issue de cette formation vous saurez :
+					A l'issue de cette formation vous saurez :
 				</h5>
 
 				<ul>
@@ -24,14 +24,14 @@
 					&agrave la fin de la formation, le stagiaire passe la certification  "Edition site Web Wordpress" </p>
 					<p class="panel-body-section-icon">
 					<span class="material-icons">library_books</span>
-					La certification se pr&eacutesente sous la forme d&#39un questionnaire de 36 questions auxquelles vous devez r&eacutepondre en 35 minutes.</p>]]></resultats-attendus>
+					La certification se pr&eacutesente sous la forme d'un questionnaire de 36 questions auxquelles vous devez r&eacutepondre en 35 minutes.</p>]]></resultats-attendus>
       <contenu-formation><![CDATA[<h5 class="panel-body-section-icon">
 					<span class="material-icons">language</span>Notre formation :</h5>
 				<ul>
 					<li>Comprendre les concepts et termes cl&eacutes du web</li>
 					<li>Conna&icirctre les principes de base du HTML</li>
-					<li>Reconna&icirctre et utiliser les formats d&#39image web courants</li>
-					<li>D&eacutefinir ce qu&#39est un CMS</li>
+					<li>Reconna&icirctre et utiliser les formats d'image web courants</li>
+					<li>D&eacutefinir ce qu'est un CMS</li>
 				</ul>
 				<h5 class="panel-body-section-icon">
 					<span class="material-icons">wordpress</span>WordPress :</h5>
@@ -57,10 +57,7 @@
 				</ul>]]></contenu-formation>
       <parcours-de-formation>2</parcours-de-formation>
       <objectif-general-formation>2</objectif-general-formation>
-      <certification>
-        <code-CERTIFINFO>112560</code-CERTIFINFO>
-      </certification>
-      
+     <certification> <code-CPF>CPF204</code-CPF></certification>
       <action numero="WORDPRESS-ACTION-1" datemaj="20220721" datecrea="20220721">
         <niveau-entree-obligatoire>0</niveau-entree-obligatoire>
         <modalites-enseignement>1</modalites-enseignement>
@@ -151,7 +148,7 @@
             </coordonnees>
           </extra>
           <extra info="modalites-handicap"><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p>
-								<i>Plus d&#39informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a>
+								<i>Plus d'informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a>
 								</i>]]></extra>
           <extra info="info-admission"><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">call</span>Entretien t&eacutel&eacutephonique :</h5><ul><li>Questionnaire sur les motivations et attentes.</li><li>V&eacuterification de la pertinence de la formation choisie.</li><ul>]]></extra>
           <extras info="codes-modalites-admission"><extra info="code-modalites-admission">99999</extra>
@@ -180,11 +177,11 @@
 </p><p class="panel-body-section-icon"><span class="material-icons">verified</span>Formation certifiante</p>]]></extra>
       </extras>
     </formation>
-            <formation numero="VOLTAIRE" datemaj="20220721" datecrea="20220721">
+            <formation numero="VOLTAIRE" datemaj="20220823" datecrea="20220721">
       <intitule-formation>Projet Voltaire - Orthographe - E-learing + Visio</intitule-formation>
       <objectif-formation><![CDATA[<h5 class="panel-body-section-icon">
 				<span class="material-icons">task_alt</span>
-				A l&#39issue de cette formation vous saurez :
+				A l'issue de cette formation vous saurez :
 				</h5>
 
 				<ul>
@@ -200,17 +197,17 @@
 				</div>]]></objectif-formation>
       <resultats-attendus><![CDATA[<p class="panel-body-section-icon"><span class="material-icons">
 				verified</span>
-				&agrave la fin de la formation, le stagiaire passe la certification  "Certificat Voltaire" en centre d&#39examen
+				&agrave la fin de la formation, le stagiaire passe la certification  "Certificat Voltaire" en centre d'examen
 				</p>]]></resultats-attendus>
       <contenu-formation><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">language</span>Notre formation:</h5>
-				<p> La formation se compose de plusieurs modules. En fonction de votre test d&#39&eacutevaluation de d&eacutepart, votre parcours commencera par «Fondamentaux Campus + Pro + Pont Sup » ou « Sup&eacuterieur ». Vous terminerez par les modules communs «Orthographie » et « Excellence ».<p>
+				<p> La formation se compose de plusieurs modules. En fonction de votre test d'&eacutevaluation de d&eacutepart, votre parcours commencera par «Fondamentaux Campus + Pro + Pont Sup » ou « Sup&eacuterieur ». Vous terminerez par les modules communs «Orthographie » et « Excellence ».<p>
 
 				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> Fondamentaux Campus :</h5>
 	
 				<ul>
 				<li>Le genre et le nombre des noms</li>
 				<li>Les adjectifs qualificatifs</li>
-				<li>Les compl&eacutements d&#39objet</li>
+				<li>Les compl&eacutements d'objet</li>
 				<li>La c&eacutedille</li>
 				<li>Les adverbes</li>
 				</ul>
@@ -224,9 +221,9 @@
 				</ul>
 
 				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> « Sup&eacuterieur » ( Module accessible en fonction de votre Test de d&eacutepart)  :</h5>
-				<p> Travail approfondi sur 140 r&egravegles non ma&#39tris&eacutees, rassembl&eacutees sur 10 niveaux class&eacutes dans un
+				<p> Travail approfondi sur 140 r&egravegles non ma'tris&eacutees, rassembl&eacutees sur 10 niveaux class&eacutes dans un
 				ordre croissant de difficult&eacute (14 r&egravegles par niveau) > temps estim&eacute : 8 heures.</p>
-				<p> R&eacutevision des 10 niveaux (reprise des 140 r&egravegles) avec remise &agrave niveau sur les derniers points non ma&#39tris&eacutes
+				<p> R&eacutevision des 10 niveaux (reprise des 140 r&egravegles) avec remise &agrave niveau sur les derniers points non ma'tris&eacutes
 				temps estim&eacute : 2 heures. </p>
 				<em>Temps pass&eacute : le temps r&eacuteel pass&eacute sur chacune des 140 r&egravegles d&eacutependra du niveau du stagiaire, &eacutevalu&eacute
 				au d&eacutebut de chaque niveau.</em>
@@ -241,17 +238,14 @@
 				r&egravegles les plus couramment utilis&eacutees dans nos &eacutecrits..</p>
 
 				<h5 class="panel-body-section-icon"><span class="material-icons">check</span> Excellence  :</h5>
-				<p> Travail approfondi sur 200 r&egravegles non ma&#39tris&eacutees et rassembl&eacutees sur 14 niveaux class&eacutes dans un ordre croissant de difficult&eacute > temps estim&eacute : 10 heures.</p>
-				<p> ->R&eacutevision des 14 niveaux (reprise des 200 r&egravegles) avec remise &agrave niveau sur les derniers points non ma&#39tris&eacutes
+				<p> Travail approfondi sur 200 r&egravegles non ma'tris&eacutees et rassembl&eacutees sur 14 niveaux class&eacutes dans un ordre croissant de difficult&eacute > temps estim&eacute : 10 heures.</p>
+				<p> ->R&eacutevision des 14 niveaux (reprise des 200 r&egravegles) avec remise &agrave niveau sur les derniers points non ma'tris&eacutes
  				temps estim&eacute : 2 heures.</p>
 				<em> Temps pass&eacute : le temps r&eacuteel pass&eacute sur chacune des 200 r&egravegles d&eacutependra du niveau du stagiaire, &eacutevalu&eacute
 				au d&eacutebut de chaque niveau.</em>]]></contenu-formation>
       <parcours-de-formation>2</parcours-de-formation>
       <objectif-general-formation>2</objectif-general-formation>
-      <certification>
-        <code-CERTIFINFO>84714</code-CERTIFINFO>
-      </certification>
-      
+     <certification> <code-CPF>CPF200</code-CPF></certification>
       <action numero="VOLTAIRE-ACTION-1" datemaj="20220721" datecrea="20220721">
         <niveau-entree-obligatoire>0</niveau-entree-obligatoire>
         <modalites-enseignement>1</modalites-enseignement>
@@ -341,7 +335,7 @@
               <courriel>contact@absys-formation.fr</courriel>
             </coordonnees>
           </extra>
-          <extra info="modalites-handicap"><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p><i>Plus d&#39informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a></i>]]></extra>
+          <extra info="modalites-handicap"><![CDATA[<p>Accessible aux personnes handicap&eacutees.</p><i>Plus d'informations &agrave <a href="mailto:contact@absys-formation.fr">contact@absys-formation.fr</a></i>]]></extra>
           <extra info="info-admission"><![CDATA[<h5 class="panel-body-section-icon"><span class="material-icons">call</span>Entretien t&eacutel&eacutephonique :</h5><ul><li>Questionnaire sur les motivations et attentes.</li><li>V&eacuterification de la pertinence de la formation choisie.</li><ul>]]></extra>
           <extras info="codes-modalites-admission"><extra info="code-modalites-admission">99999</extra>
           </extras>

@@ -102,13 +102,39 @@ class FormationType extends AbstractType
                     ]),
                 ],
             ])
-            ->add('certifInfo', NumberType::class, [
+
+            //CODE CERTIF IFNO  Après le 8 Sept 2022
+            /*   ->add('certifInfo', ChoiceType::class, [
+                'choices' => [
+                    'Bilan de compétences' => 'CPF202',
+                    'Validation des Acquis de l\'Expérience (VAE)' => 'CPF200',
+                    'Accompagnement à la création-reprise d\'entreprise' => 'CPF203',
+                    'Permis de conduire catégorie B' => 'CPF206',
+                    'Permis de conduire catégorie C' => 'CPF210',
+                    'Permis de conduire catégorie C1' => 'CPF211',
+                    'Permis de conduire catégorie C1E' => 'CPF212',
+                    'Permis de conduire catégorie CE' => 'CPF213',
+                    'Permis de conduire catégorie D' => 'CPF214',
+                    'Permis de conduire catégorie D1' => 'CPF215',
+                    'Permis de conduire catégorie D1E' => 'CPF216',
+                    'Permis de conduire catégorie DE' => 'CPF217'
+                ],
+                'placeholder' => 'Choisie une option',
                 'required' => true,
-                'label' => 'Code CERTIFINFO',
-                'attr' => ['maxlength' => 6],
+                'label' => 'Code RNCP/RS/CPF',
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Veuillez renseigner le code CERTIFINFO. (max 6 caractères)',
+                        'message' => 'Veuillez séléctionner le code de l\'offre.',
+                    ]),
+                ],
+            ]) */
+            ->add('certifInfo', TextType::class, [
+                'required' => true,
+                'label' => 'Code RNCP/RS/CPF',
+                'attr' => ['maxlength' => 255],
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Veuillez renseigner un code Code RNCP/RS/CPF.',
                     ]),
                 ],
             ])

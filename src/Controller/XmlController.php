@@ -71,10 +71,22 @@ class XmlController extends AbstractController
       <contenu-formation><![CDATA[" . $Formation->getContenuFormation() . "]]></contenu-formation>
       <parcours-de-formation>" . $Formation->getParcoursDeFormation() . "</parcours-de-formation>
       <objectif-general-formation>" . $Formation->getObjectifGeneralFormation() . "</objectif-general-formation>
-      <certification>
-        <code-CERTIFINFO>" . $Formation->getCertifInfo() . "</code-CERTIFINFO>
-      </certification>
-      ";
+     ";
+
+        $xml_doc .= "<certification>";
+
+        if (substr($Formation->getCertifInfo(), 0, 4) == "RNCP") {
+          $xml_doc .= " <code-RNCP>" . $Formation->getCertifInfo() . "</code-RNCP>";
+        } else if (substr($Formation->getCertifInfo(), 0, 2) == "RS") {
+          $xml_doc .= " <code-RS>" . $Formation->getCertifInfo() . "</code-RS>";
+        } else if (substr($Formation->getCertifInfo(), 0, 3) == "CPF") {
+          $xml_doc .= " <code-CPF>" . $Formation->getCertifInfo() . "</code-CPF>";
+        } else {
+          dd("ERROR CERTIF INFO");
+        }
+
+
+        $xml_doc .= "</certification>";
 
         foreach ($Actions as $key => $Action) {
           $Sessions = $sessionRepository->findBy(
@@ -240,20 +252,27 @@ class XmlController extends AbstractController
 	  î = &icirc
 	  à = &agrave
 	  è = &egrave 
+    â = &acirc
+    œ = &oelig
     */
 
       $xml_doc = str_replace('é', '&eacute', $xml_doc);
       $xml_doc = str_replace('è', '&egrave', $xml_doc);
       $xml_doc = str_replace('à', '&agrave', $xml_doc);
+      $xml_doc = str_replace('À', '&Agrave', $xml_doc);
       $xml_doc = str_replace('ï', '&iuml', $xml_doc);
       $xml_doc = str_replace('î', '&icirc', $xml_doc);
 
       $xml_doc = str_replace('ô', '&ocirc', $xml_doc);
       $xml_doc = str_replace('ç', '&ccedil', $xml_doc);
       $xml_doc = str_replace('ê', '&ecirc', $xml_doc);
+      $xml_doc = str_replace('â', '&acirc', $xml_doc);
+      $xml_doc = str_replace('Â', '&Acirc', $xml_doc);
       $xml_doc = str_replace('ù', '&ugrave', $xml_doc);
+      $xml_doc = str_replace('œ', '&oelig', $xml_doc);
 
       $xml_doc = str_replace("’", "'", $xml_doc);
+      $xml_doc = str_replace("'", "&acute", $xml_doc);
 
       $default_dir = "";
       $default_dir .= $xmlfileName . ".xml";
